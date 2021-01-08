@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box float</title>
+    <style>
+        #wrapper {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        /* .box-1{
+            width: 300px;
+            height: 200px;
+            background-color: rosybrown;
+            text-align: center;
+            float: left;
+        }
+        .box-2{
+            width: 500px;
+            height: 200px;
+            background-color: saddlebrown;
+            text-align: center;
+            float: left;
+        } */
+        .post-title{
+            display: block;
+            margin-bottom: 20px;
+            text-decoration: none;
+        }
+        .post-thumb{
+            width: 200px;
+            display: block;
+        }
+        .post-thumb img{
+            max-width: 100%;
+            display: block;
+            float: left;
+            padding-right: 20px;
+        }
+        .clear-both{
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1>Float</h1>
+        <!-- <div class="box-1">
+            Box 1
+        </div>
+        <div class="box-2">
+            Box 2
+        </div> -->
+        <article>
+            <a href="" class="post-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, in?</a>
+            <a href="" class="post-thumb">
+                <img src="./images/google3.jpg" alt="">
+            </a>
+            <p class="post-desc">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad dolores adipisci maiores doloribus commodi
+                veritatis quos delectus, cumque eligendi necessitatibus quidem aspernatur odio ducimus. Aut corrupti
+                consectetur obcaecati, iste id asperiores iusto reiciendis dignissimos incidunt quam magni ut dolorem
+                blanditiis.
+            </p>
+            <div class="clear-both"></div>
+        </article>
+
+        <article>
+            <a href="" class="post-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, in?</a>
+            <a href="" class="post-thumb">
+                <img src="./images/google3.jpg" alt="">
+            </a>
+            <p class="post-desc">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad dolores adipisci maiores doloribus commodi
+                veritatis quos delectus, cumque eligendi necessitatibus quidem aspernatur odio ducimus. Aut corrupti
+                consectetur obcaecati, iste id asperiores iusto reiciendis dignissimos incidunt quam magni ut dolorem
+                blanditiis.
+            </p>
+            <div class="clear-both"></div>
+        </article>
+    </div>
+</body>
+
+</html>

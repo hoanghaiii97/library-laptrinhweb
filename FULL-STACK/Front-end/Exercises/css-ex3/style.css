@@ -1,0 +1,38 @@
+body{
+    width: 960px;
+    margin: 0 auto;
+}
+
+h1{
+    background-color: rgb(171, 171, 236);
+    font-size: 40px;
+}
+
+h1:hover {
+    background-color: #f00;
+}
+
+.change-color{
+    color: orange;
+}
+
+p{
+    font-size: 18px;
+}
+
+a[href] {
+    color: orangered;
+}
+
+a[href]:hover{
+    color: green;
+    cursor: pointer;
+}
+
+article h2 {
+    color: greenyellow;
+}
+
+input:checked+label{
+    color: red;
+}

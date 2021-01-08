@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương thức về class</title>
+    <script src="./js/jquery.min.js"></script>
+</head>
+<body>
+    <style>
+        .highlight{
+            color: red;
+            background: gold;
+        }
+    </style>
+
+
+    <script>
+        $(document).ready(function(){
+            $('p').click(function(){
+                // // 1. Thêm class vào p
+                // // $(this).css({color: 'red', background: 'gold'});
+                // $(this).addClass('highlight');
+
+                // // 2. Khi click vào thẻ p chỉ duy nhất 1 thẻ đc click có color và background
+                // if(!$(this).hasClass('highlight')){
+                //     $('p').removeClass('highlight');
+                //     $(this).addClass('highlight');
+                // }
+
+                // 3. Sử đụng toggleClass như công tắc bật tắt
+                $('p').removeClass('highlight');
+                $(this).toggleClass('highlight');
+            });
+        });
+    </script>
+
+    <p>Đoạn văn số 1</p>
+    <p>Đoạn văn số 2</p>
+    <p>Đoạn văn số 3</p>
+    <p>Đoạn văn số 4</p>
+    <p>Đoạn văn số 5</p>
+</body>
+</html>

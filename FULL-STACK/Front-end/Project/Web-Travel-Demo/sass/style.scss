@@ -1,0 +1,383 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+$bg-color: #f8f8f8;
+
+#wrapper{
+    position: relative;
+}
+
+#header{
+    .header-top{
+        background-color: $bg-color;
+        padding: 10px 0;
+        .header-hotline{
+            position: relative;
+            span:last-child{
+                font-weight: 700;
+            }
+            .img-list-number{
+                position: absolute;
+                right: 260px;
+                top: -10px;
+                padding: 10px;
+            }
+
+            .header-list-number{
+                display: none;
+                background-color: rgb(236, 240, 243);
+                border-radius: 3px;
+                padding: 20px;
+                position: absolute;
+                z-index: 10;
+                .item-list-number{
+                    span{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        .header-info{
+            float: right;
+            input{
+                border: none;
+                background: $bg-color;
+                font-size: 14px;
+                margin-right: 20px;
+            }
+            a{
+                margin-right: 20px;
+            }
+            a:hover{
+                cursor: pointer;
+            }
+            a::after{
+                content: "";
+                border-right: 1px solid rgb(173, 167, 167);
+                margin-left: 8px;
+            }
+        }
+    }
+
+    .header-bottom{
+        #main-menu{
+            li#item-main-menu{
+                padding-bottom: 20px;
+                ul.sub-menu{
+                    display: none;
+                    background: white;
+                    border: 1px solid #d8d2d2;
+                    padding: 10px;
+                    position: absolute;
+                    top: 50px;
+                    box-shadow: 5px 5px 5px #e5e5e5;
+                    z-index: 2;
+                    li.item-sub-menu{
+                        border-bottom: 1px dotted #e5e5e5;
+                        margin-bottom: 20px;
+                        padding-right: 50px;
+                    }
+
+                    li.item-sub-menu:hover a{
+                        color: red !important;
+                    }
+                }
+            }
+            li#item-main-menu:hover a.title-main-menu{
+                color: red !important;
+            }
+            li#item-main-menu:hover ul.sub-menu{
+                display: block !important;
+            }
+        }
+    }
+}
+// END HEADER
+
+
+#wp-content{
+    position: relative;
+    #frame-search{
+        justify-content: space-between;
+        position: absolute;
+        z-index: 2;
+        right: 135px;
+        top: 280px;
+        
+        .item-frame-search{
+            background: rgb(255,255,255);
+            border: 1px solid #d8d2d2;
+            padding: 10px 30px;
+            height: 125px;
+            i{
+                font-size: 30px;
+                padding-left: 25px;
+                color: rgb(214, 61, 61);
+                margin-bottom: 5px;
+            }
+            p{
+                border-bottom: 1px dotted #c2bbbb;
+                
+            }
+            
+        }
+        .item-frame-search:hover{
+            cursor: pointer;
+            border: 1px solid red;
+        }
+    }
+    // end-frame search
+
+    #tour-travel{
+        .item-tour-travel{
+            position: relative;
+            .info-tour-travel{
+                position: absolute;
+                bottom: 10px;
+                left: 20px;
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    // end- tour travel
+
+    #pay-online{
+        position: relative;
+        .info-pay-online{
+            position: absolute;
+            bottom: 10px;
+            left: 30px;
+            span::after{
+                content: "";
+                border-right: 1px solid #f8f8f8;
+                margin-left: 5px;
+            }
+        }
+
+        .address-start{
+            position: absolute;
+            bottom: 200px;
+            left: 25px;
+        }
+
+    }
+    // end - payonline
+
+    #address-love{
+        .al-top{
+            
+            .al-top-item{
+                position: relative;
+                .al-top-info{
+                    position: absolute;
+                    bottom: 15px;
+                    left: 25px;
+                }
+            }
+        }
+    }
+    // end - address love
+
+    #feedback-customer{
+        .feedback-customer-item{
+            background: $bg-color;
+            padding: 20px;
+            position: relative;
+            .feedback-customer-info{
+                position: absolute;
+                right: 100px;
+            }
+        }
+    }
+    // end - feedback-customer
+
+    #why-choose-us{
+        background-color: $bg-color;
+        .choose-us-info{
+            strong{
+                font-size: 30px;
+            }
+        }
+    }
+    // end - why-choose-us
+
+    #option-travel{
+        .option-travel-item{
+            background: $bg-color;
+            .option-travel-inside{
+                padding-left: 5px;
+                .option-travel-list{
+                    padding-bottom: 10px;
+                     padding-left: 10px;
+                     a:hover{
+                         color: red !important;
+                     }
+                 }
+            }
+            
+            .option-travel-info{
+
+            }
+        }
+    }
+    // end - option-travel
+
+}
+// END WP-CONTENT
+
+#footer{
+    .footer-info{
+        ul.list-tapchi,
+         ul.list-news,
+          ul.list-chinhsach{
+            li:hover a{
+                color: red !important;
+            }
+        }
+        .footer-email{
+            button{
+                color: red;
+            }
+        }
+        .footer-search{
+
+        }
+    }
+}
+// END FOOTER
+
+ul.list-icon-network{
+    position: fixed;
+    right: 0px;
+    bottom: 200px;
+    li#item-list-network{
+        border: 1px dotted #c2bbbb;
+        padding: 10px;
+        background: #f8f8f8;
+    }
+    li#item-list-network:first-child:hover{
+        background: rgb(240, 122, 80);
+    }
+    li#item-list-network:nth-child(2):hover{
+        background: rgb(97, 97, 235);
+    }
+    li#item-list-network:nth-child(3):hover{
+        background: rgb(231, 99, 99);
+    }
+    li#item-list-network:nth-child(4):hover{
+        background: rgb(134, 149, 218);
+    }
+    li#item-list-network:nth-child(5):hover{
+        background: rgb(241, 33, 33);
+    }
+    li#item-list-network:nth-child(6):hover{
+        background: rgb(240, 240, 58);
+    }
+    li#item-list-network:last-child:hover{
+        background: rgb(103, 103, 228);
+    }
+}
+// end - list-icon-network
+
+
+                            /* Back top top */
+.back-to-top{
+    display: block;
+    width: 65px;
+    height: 65px;
+    background: url(../assets/img/back_to_top_1.png) left top / 100% 100% no-repeat;
+    position: fixed;
+    bottom: 5px;
+    right: 3%;
+    cursor: pointer;
+    stop-opacity: 0;
+    z-index: 1000000;
+    opacity: 0.8;
+}
+
+
+
+                        // Menu-responsive
+#site{
+    overflow: hidden; 
+    position: relative;
+}
+
+#respon-head{
+    position: relative;
+    border: 1px dotted #d8d2d2;
+}
+
+#icon-menu-responsive{
+    display: none;
+    position: absolute;
+    font-size: 18px;
+    top: 9px;
+    left: -32px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #c2bbbb;
+    padding: 3px 5px;
+    border-radius: 2px;
+    background-color: rgb(0,102,179);
+}
+
+#wp-respon-menu{
+    background-color: #f8f8f8;
+    width: 250px;
+    color: #111111;
+    position: absolute;
+    top: 0;
+    right: -250px;
+    height: 100%;
+    transition: right 0.25s;
+    z-index: 10;
+    height: auto;
+    
+}
+
+ul#respon-menu{
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+    right: 0;
+    li#item-respon-menu{
+        border: 1px dotted #d8d2d2;
+        ul#sub-menu{
+            li.item-sub-menu:hover a{
+                color: red !important;
+            }
+        }
+    }
+}
+
+ul#respon-menu li a{
+    display: block;
+    padding: 5px 20px;
+    color: #111111;
+    text-decoration: none;
+    
+}
+
+/* #site.open-respon-menu #wrapper{
+    left: 250px;
+    transition: left 0.25s;
+} */
+
+#site.open-respon-menu #wp-respon-menu{
+    right: 0;
+    transition: right 0.25s;
+}
+// end - responmenu
+
+
+// code dạo
+s{
+    background: url() no-repeat;
+}

@@ -1,0 +1,268 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.header__logo--list {
+  margin-top: 10px;
+}
+
+.header__logo--icon {
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+.header__logo--icon:hover {
+  cursor: pointer;
+}
+
+.header__logo--minus {
+  position: absolute;
+  top: 5px;
+  z-index: 10;
+  display: none;
+  width: 200px;
+  height: 300px;
+}
+
+.header__logo--minus a {
+  color: #000;
+}
+
+.header__logo--minus i {
+  font-size: 25px;
+  padding: 15px 13px;
+  background: #f2f2f2;
+}
+
+.header__logo--minus i:hover {
+  cursor: pointer;
+}
+
+.header__main--menu li a:hover {
+  color: #C0A33E !important;
+}
+
+.header__list--icon a {
+  position: relative;
+}
+
+.header__list--icon a:nth-child(2)::after {
+  content: "3";
+  font-size: 11px;
+  color: white;
+  background: #000;
+  border-radius: 100px;
+  padding: 0 5px;
+  position: absolute;
+  top: -5px;
+  right: -11px;
+}
+
+.header__list--icon a:nth-child(3)::after {
+  content: "2";
+  font-size: 11px;
+  color: white;
+  background: #000;
+  border-radius: 100px;
+  padding: 0 5px;
+  position: absolute;
+  top: -5px;
+  left: 11px;
+}
+
+.intro {
+  padding-top: 100px;
+}
+
+.intro__info {
+  padding-left: 100px;
+  padding-top: 100px;
+}
+
+.intro__info h2 {
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 500;
+}
+
+.intro__info button {
+  color: #C0A33E;
+  border: 1px solid #C0A33E;
+  padding: 5px;
+  background: #f2f2f2;
+}
+
+.product__info {
+  margin-bottom: 40px;
+}
+
+.product__info h4 {
+  font-size: 32px;
+  line-height: 3rem;
+  font-weight: 500;
+}
+
+.product__item--info {
+  height: 370px;
+  position: relative;
+  height: 460px;
+}
+
+.product__image {
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+}
+
+.product__image:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  cursor: pointer;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+.product__icon--heart {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #000;
+  font-size: 1.5rem;
+}
+
+.product__sale {
+  background: #000;
+  width: 100px;
+  padding: 5px 0;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+.product__price {
+  color: #C0A33E;
+}
+
+.product__highlight {
+  position: relative;
+}
+
+.product__highlight--info {
+  position: absolute;
+  top: 30%;
+}
+
+.product__highlight--info h4 {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 500;
+}
+
+.product__highlight--info a {
+  color: #C0A33E;
+  border: 1px solid #C0A33E;
+  padding: 7px;
+}
+
+.product__list--info h4 {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 500;
+}
+
+.product__list--info button {
+  color: #C0A33E;
+  border: 1px solid #C0A33E;
+  padding: 5px;
+  background: #fff;
+}
+
+.select__utility {
+  padding-left: 70px;
+}
+
+.select__utility--icon {
+  font-size: 25px;
+  color: #C0A33E;
+}
+
+.select__utility h4 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+.select__utility p {
+  text-align: left;
+}
+
+.advice__info p {
+  font-size: 0.875rem;
+}
+
+.advice__info h5 {
+  font-weight: 600;
+}
+
+.advice__info a {
+  color: #C0A33E;
+}
+
+.footer__logo h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.footer__contact h2 {
+  margin-bottom: 40px;
+}
+
+.footer__product h2 {
+  margin-bottom: 40px;
+}
+
+.slick-next:before {
+  content: url(../asset/img/home/right.png);
+  position: absolute;
+  top: -35px;
+  right: 5px;
+  font-size: 2rem;
+  color: #C0A33E;
+}
+
+.slick-prev:before {
+  content: url(../asset/img/home/left.png);
+  position: absolute;
+  top: -35px;
+  font-size: 2rem;
+  color: #C0A33E;
+}
+
+.product__slide--item {
+  padding: 0 1.5rem;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion WebDesign</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/sass/slick.css">
+    <link rel="stylesheet" href="./assets/sass/slick-theme.css">
+    <link rel="stylesheet" href="./assets/sass/main.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__border container-fluid">
+            <div class="container">
+                    <div class="header__info">
+                        <div class="header__time">
+                            <span>
+                                <i class="header__icon far fa-clock"></i>
+                                Thứ 2 - thứ 7: 8.00am - 20:00pm
+                            </span>
+                        </div>
+    
+                        <div class="header__support">
+                            <i class="far fa-envelope"></i>
+                            support@haido.vn
+                        </div>
+    
+                        <div class="header__contact">
+                            <i class="fas fa-phone"></i>
+                            0339550416
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="header__navbar">
+                <a href="./index.html" class="header__logo">
+                    <img src="./assets/images/logo.png" alt="" class="header__logo--img">
+                </a>
+
+                <ul class="header__navbar--list">
+                    <li class="header__navbar--item">
+                        <a href="#" class="header__navbar--link">Trang chủ</a>
+                    </li>
+                    <li class="header__navbar--item">
+                        <a href="#" class="header__navbar--link">Giới thiệu</a>
+                    </li>
+                    <li class="header__navbar--item">
+                        <a href="#" class="header__navbar--link">Giày</a>
+                    </li>
+                    <li class="header__navbar--item header__navbar--item--has-notify">
+                        <a href="#" class="header__navbar--link">Túi xách</a>
+                        <span><i class="header__notify--icon fas fa-chevron-down"></i></span>
+                        <div class="header__notify">
+                            <ul class="header__notify--list">
+                                <li class="header__notify--item">
+                                    <a href="" class="header__notify--link">Túi xách tay nữ</a>
+                                </li>
+                                <li class="header__notify--item">
+                                    <a href="" class="header__notify--link">Túi đeo chéo nữ</a>
+                                </li>
+                                <li class="header__notify--item">
+                                    <a href="" class="header__notify--link">Túi bản to</a>
+                                </li>
+                                <li class="header__notify--item">
+                                    <a href="" class="header__notify--link">Túi đeo vai</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__navbar--item">
+                        <a href="#" class="header__navbar--link">Áo thun</a>
+                    </li>
+                    <li class="header__navbar--item">
+                        <a href="#" class="header__navbar--link">Đồng hồ</a>
+                    </li>
+                    <li class="header__navbar--item">
+                        <a href="#" class="header__navbar--link">Block</a>
+                    </li>
+                    <li class="header__navbar--item">
+                        <a href="#" class="header__navbar--link">Liên hệ</a>
+                    </li>
+                </ul>
+
+                <div class="header__cart">
+                    <a href=""><i class="header__cart--item fas fa-search"></i></a>
+                    <a href=""><i class="header__cart--item fas fa-shopping-cart"></i></a>
+                    <span class="header__cart--notice">3</span>
+                </div>
+
+                <div class="header__navbar--icon">
+                    <i class="fas fa-bars""></i>
+                </div>
+            </div>
+        </div>
+        
+    <div class="nav__mobile">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="" class="nav__link">Trang chủ</a>
+            </li>
+            <li class="nav__item">
+                <a href="" class="nav__link">Giới thiệu</a>
+            </li>
+            <li class="nav__item">
+                <a href="" class="nav__link">Giày</a>
+            </li>
+            <li class="nav__item">
+                <a href="" class="nav__link">Túi xách</a>
+            </li>
+            <li class="nav__item">
+                <a href="" class="nav__link">Áo thun</a>
+            </li>
+            <li class="nav__item">
+                <a href="" class="nav__link">Đồng hồ</a>
+            </li>
+            <li class="nav__item">
+                <a href="" class="nav__link">Block</a>
+            </li>
+            <li class="nav__item">
+                <a href="" class="nav__link">Liên hệ</a>
+            </li>
+        </ul>
+    </div>
+    </header>
+
+
+    <section class="banner">
+            <div class="banner__content">
+                <p class="banner__sales">Giảm Giá 30%</p>
+                <h1 class="banner__title">Áo len hàn quốc</h1>
+                <p class="banner__description">
+                    Lorem ipsum dolor sit emet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incidiunt ut dolore manga aliqua quis. 
+                </p>
+                <button class="button">Buy Now</button>
+            </div>
+    </section>
+
+    <section class="deliver">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="deliver__box">
+                        <i class="deliver__icon fas fa-shield-alt"></i>
+                        <p class="deliver__title">Đổi trả trong 30 ngày</p>
+                    </div>  
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="deliver__box">
+                        <i class="deliver__icon fas fa-headphones"></i>
+                        <p class="deliver__title">Hỗ trợ 24/7: 0339550416</p>
+                    </div>  
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="deliver__box">
+                        <i class="deliver__icon fas fa-truck"></i>
+                        <p class="deliver__title">Miễn phí ship toàn quốc</p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading">
+                        <h3 class="heading__title">Sản phẩm mới</h3>
+                        <p class="heading__description">Những sản phẩm là xu thế của thời trang 2020 được ưa chuộng</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-4 col-6">
+                    <div class="product__item">
+                        <img src="./assets/images/sp-4.jpg" alt="" class="product__image">
+                        <div class="product__info">
+                            <div class="product__item--rating">
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="product__item--rating--evaluate">(8 nhận xét)</span>
+                            </div>
+                            <h3 class="product__title">Áo Khoác JAKA Nhật Bản</h3>
+                            <span class="product__price">1.200.000đ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-6">
+                    <div class="product__item">
+                        <img src="./assets/images/sp-3.jpg" alt="" class="product__image">
+                        <div class="product__info">
+                            <div class="product__item--rating">
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="product__item--rating--evaluate">(8 nhận xét)</span>
+                            </div>
+                            <h3 class="product__title">Đồng hồ Rolex Nhật Bản</h3>
+                            <span class="product__price">400.000.000đ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-6">
+                    <div class="product__item">
+                        <img src="./assets/images/sp-5.jpg" alt="" class="product__image">
+                        <div class="product__info">
+                            <div class="product__item--rating">
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="product__item--rating--evaluate">(8 nhận xét)</span>
+                            </div>
+                            <h3 class="product__title">Đầm thun JAKA Nhật Bản</h3>
+                            <span class="product__price">2.200.000đ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-6">
+                    <div class="product__item">
+                        <img src="./assets/images/sp-2.jpg" alt="" class="product__image">
+                        <div class="product__info">
+                            <div class="product__item--rating">
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="product__item--rating--evaluate">(8 nhận xét)</span>
+                            </div>
+                            <h3 class="product__title">Giày Aididas Chính Hãng</h3>
+                            <span class="product__price">1.200.000đ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-6">
+                    <div class="product__item">
+                        <img src="./assets/images/sp-2.jpg" alt="" class="product__image">
+                        <div class="product__info">
+                            <div class="product__item--rating">
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="product__item--rating--evaluate">(8 nhận xét)</span>
+                            </div>
+                            <h3 class="product__title">Giày Aididas Chính Hãng</h3>
+                            <span class="product__price">1.200.000đ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-6">
+                    <div class="product__item">
+                        <img src="./assets/images/sp-5.jpg" alt="" class="product__image">
+                        <div class="product__info">
+                            <div class="product__item--rating">
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="product__item--rating--evaluate">(8 nhận xét)</span>
+                            </div>
+                            <h3 class="product__title">Đầm thun JAKA Nhật Bản</h3>
+                            <span class="product__price">2.200.000đ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-6">
+                    <div class="product__item">
+                        <img src="./assets/images/sp-3.jpg" alt="" class="product__image">
+                        <div class="product__info">
+                            <div class="product__item--rating">
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="product__item--rating--evaluate">(8 nhận xét)</span>
+                            </div>
+                            <h3 class="product__title">Đồng hồ Rolex Nhật Bản</h3>
+                            <span class="product__price">400.000.000đ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-4 col-6">
+                    <div class="product__item">
+                        <img src="./assets/images/sp-4.jpg" alt="" class="product__image">
+                        <div class="product__info">
+                            <div class="product__item--rating">
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="product__item--rating--gold fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="product__item--rating--evaluate">(8 nhận xét)</span>
+                            </div>
+                            <h3 class="product__title">Áo khoác JAKA Nhật Bản</h3>
+                            <span class="product__price">1.200.000đ</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row no-gutters">
+                <div class="col-md-6">
+                    <div class="category">
+                        <img src="./assets/images/category-1.jpg" alt="" class="category__image category__image--has--box">
+                        <div class="category__box">
+                            <h3 class="category__title">Giày</h3>
+                            <button class="button">See More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="category">
+                        <img src="./assets/images/category-2.jpg" alt="" class="category__image">
+                        <img src="./assets/images/category-3.jpg" alt="" class="category__image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading">
+                        <h3 class="heading__title">Bán chạy</h3>
+                        <p class="heading__description">Bộ sưu tập những sản phẩm bán chạy nhất hệ thống, bây giờ là của bạn</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product__slide">
+                 <div class="responsive row">
+                    <div class="product__slide--item">
+                        <div class="product__item">
+                            <img src="./assets/images/sp-12.jpg" alt="" class="product__image">
+                            <div class="product__info">
+                                <div class="product__item--rating">
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="product__item--rating--evaluate">(8 nhận xét)</span>
+                                </div>
+                                <h3 class="product__title">Kính Mắt JAKA Nhật Bản</h3>
+                                <span class="product__price">2.200.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product__slide--item">
+                        <div class="product__item">
+                            <img src="./assets/images/sp-11.jpg" alt="" class="product__image">
+                            <div class="product__info">
+                                <div class="product__item--rating">
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="product__item--rating--evaluate">(8 nhận xét)</span>
+                                </div>
+                                <h3 class="product__title">Áo khoác gió Nhật Bản</h3>
+                                <span class="product__price">3.200.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="product__slide--item">
+                        <div class="product__item">
+                            <img src="./assets/images/sp-6.jpg" alt="" class="product__image">
+                            <div class="product__info">
+                                <div class="product__item--rating">
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="product__item--rating--evaluate">(8 nhận xét)</span>
+                                </div>
+                                <h3 class="product__title">Áo bò thun Nhật Bản</h3>
+                                <span class="product__price">1.200.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product__slide--item">
+                        <div class="product__item">
+                            <img src="./assets/images/sp-4.jpg" alt="" class="product__image">
+                            <div class="product__info">
+                                <div class="product__item--rating">
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="product__item--rating--evaluate">(8 nhận xét)</span>
+                                </div>
+                                <h3 class="product__title">Áo khoác JAKA Nhật Bản</h3>
+                                <span class="product__price">1.200.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product__slide--item">
+                        <div class="product__item">
+                            <img src="./assets/images/sp-4.jpg" alt="" class="product__image">
+                            <div class="product__info">
+                                <div class="product__item--rating">
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="product__item--rating--evaluate">(8 nhận xét)</span>
+                                </div>
+                                <h3 class="product__title">Áo khoác JAKA Nhật Bản</h3>
+                                <span class="product__price">1.200.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product__slide--item">
+                        <div class="product__item">
+                            <img src="./assets/images/sp-6.jpg" alt="" class="product__image">
+                            <div class="product__info">
+                                <div class="product__item--rating">
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="product__item--rating--evaluate">(8 nhận xét)</span>
+                                </div>
+                                <h3 class="product__title">Áo bò thun Nhật Bản</h3>
+                                <span class="product__price">1.200.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product__slide--item">
+                        <div class="product__item">
+                            <img src="./assets/images/sp-11.jpg" alt="" class="product__image">
+                            <div class="product__info">
+                                <div class="product__item--rating">
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="product__item--rating--evaluate">(8 nhận xét)</span>
+                                </div>
+                                <h3 class="product__title">Áo khoác gió Nhật Bản</h3>
+                                <span class="product__price">3.200.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product__slide--item">
+                        <div class="product__item">
+                            <img src="./assets/images/sp-12.jpg" alt="" class="product__image">
+                            <div class="product__info">
+                                <div class="product__item--rating">
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="product__item--rating--gold fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="product__item--rating--evaluate">(8 nhận xét)</span>
+                                </div>
+                                <h3 class="product__title">Kính Mắt JAKA Nhật Bản</h3>
+                                <span class="product__price">2.200.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="share">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading">
+                        <h3 class="heading__title">Chia sẻ</h3>
+                        <p class="heading__description">Những bài viết mới về thời trang, bạn có thể xem bây giờ !</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="share__item">
+                        <img src="./assets/images/post-1.jpg" alt="" class="share__image">
+                        <div class="share__info">
+                            <h4 class="share__title">Thời trang</h4>
+                            <h3 class="share__name">5 mẹo cơ bản để phối đồ</h3>
+                            <span class="share__time">June 10, 2020</span>
+                            <p class="share__desc">
+                                Tips and tricks that most people would'nt hightlight when colors.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="share__item">
+                        <img src="./assets/images/post-2.jpg" alt="" class="share__image">
+                        <div class="share__info">
+                            <h4 class="share__title">Thời trang</h4>
+                            <h3 class="share__name">5 mẹo cơ bản để phối đồ</h3>
+                            <span class="share__time">June 10, 2020</span>
+                            <p class="share__desc">
+                                Tips and tricks that most people would'nt hightlight when colors.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="share__item">
+                        <img src="./assets/images/post-3.jpg" alt="" class="share__image">
+                        <div class="share__info">
+                            <h4 class="share__title">Thời trang</h4>
+                            <h3 class="share__name">5 mẹo cơ bản để phối đồ</h3>
+                            <span class="share__time">June 10, 2020</span>
+                            <p class="share__desc">
+                                Tips and tricks that most people would'nt hightlight when colors.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="btn">See more</a>
+
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="footer__box">
+                        <h3 class="footer__title">Địa chỉ</h3>
+                        <div class="footer__info">
+                            <i class="footer__info--icon fas fa-map-marker-alt"></i>
+                            Tòa nhà N01T5 Ngoại Giao Đoàn, Bắc Từ Liêm, Hà Nội
+                        </div>
+                        <div class="footer__info">
+                            <i class="footer__info--icon fas fa-phone"></i>
+                            0339550416
+                        </div>
+                        <div class="footer__info">
+                            <i class="footer__info--icon far fa-envelope"></i>
+                            hoanghaiii97tb@gmail.com
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="footer__box">
+                        <h3 class="footer__title">Giới thiệu</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Về chúng tôi</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Cách đặt hàng</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Kiểm tra đơn hàng</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Hỗ trợ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="footer__box">
+                        <h3 class="footer__title">Danh mục</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Giày thể thao</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Váy</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Kính mắt</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Túi xách</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="footer__box">
+                        <h3 class="footer__title">Social</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    <i class="footer__link--icon fab fa-facebook-f"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    <i class="footer__link--icon fab fa-youtube"></i>
+                                    Youtube
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    <i class="footer__link--icon fab fa-twitter"></i>
+                                    Twitter
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer__copyright">
+        <p>
+            &copy; 2020 - 2025 CREATIVE ACADEMY - ITDEV.VN
+        </p>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    
+    <!-- Slick Slider -->
+    <script src="./assets/js/slick.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

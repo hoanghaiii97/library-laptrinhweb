@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display-flex-basic</title>
+</head>
+
+<body>
+    <style>
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            background-color: lightcoral;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .flex-item {
+            flex-basis: auto;
+            background-color: lightslategray;
+            text-align: center;
+            padding: 50px;
+            margin: 20px;
+            font-size: 20px;
+            color: lightyellow;
+            
+        }
+        .item-1{
+            order: 2;
+        }
+        .item-2{
+            order: -1;
+        }
+        .item-3{
+            order: 1;
+            flex-basis: 30%; 
+            /* flex-basis: thiết lập kích thước của khối theo item */
+        }
+        .item-4{
+            order: 0; 
+        }
+    </style>
+    <h1>Display-flex-basic</h1>
+    <div class="container">
+        <div class="flex-item item-1">1</div>
+        <div class="flex-item item-2">2</div>
+        <div class="flex-item item-3">3</div>
+        <div class="flex-item item-4">4</div>
+    </div>
+</body>
+
+</html>

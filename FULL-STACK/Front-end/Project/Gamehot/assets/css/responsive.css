@@ -1,0 +1,191 @@
+
+@media screen and (max-width: 576px){
+    body{
+        width: 100%;
+    }
+
+    .header .container{
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .header-nav{
+        display: none;
+    }
+
+    .header-logo{
+        margin: 0;
+    }
+
+    .header .icon-menu-responsive{
+        display: block;
+        padding-left: 15px;
+    }
+    
+    .header .icon-search-black{
+        display: block;
+        padding-right: 15px;
+    }
+
+
+    .sidebar-left, .sidebar-right{
+        display: none;
+    }
+
+    .wp-content .container{
+        width: 100%;
+    }
+
+    .content{
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .content .banner{
+        width: 100%;
+    }
+
+    .content .info-content{
+        width: 100%;
+    }
+
+    .info-content .title-content{
+        padding: 10px 5px 0 5px;
+    }
+
+    .info-content .title-content .item-title-content span{
+        font-size: 12px !important;
+        line-height: 15px;
+    }
+
+    .info-content .title-content .item-title-content:nth-child(2) span,
+    .info-content .title-content .item-title-content:nth-child(3) span{
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .info-content .title-content .item-title-content:nth-child(2){
+        padding: 2px 5px;
+    }
+    
+    .info-content .title-content .item-title-content:last-child{
+        padding: 2px 5px;
+    }
+
+
+    .info-content .game-content{
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .info-content .item-game-content{
+        display: block;
+    }
+
+    .info-content .item-game-content .intro-game img{
+        width: 100%;
+    }
+
+    .info-content .item-game-content .intro-game a{
+        font-size: 12px;
+    }
+
+    .info-content .item-game-content .intro-game div{
+        margin: 0 !important;
+    }
+
+    .info-content .item-game-content .info-game{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .info-content .item-game-content .info-game img{
+        display: none;
+    }
+
+    .info-content .item-game-content .info-game p{
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+
+    .info-content .mu-list{
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .info-content .mu-list .item-mu-list{
+        padding: 0 0 15px 0;
+        margin: 0;
+    }
+
+    .info-content .mu-list .item-mu-list .intro-mu-list{
+        border: none;
+        padding: 0;
+        position: relative;
+    }
+
+    .info-content .mu-list .item-mu-list .intro-mu-list a{
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .info-content .mu-list .item-mu-list .intro-mu-list img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .info-content .mu-list .item-mu-list .intro-mu-list div:first-child{
+        position: absolute;
+        left: 80px;
+        bottom: 18px;
+    }
+
+    .info-content .mu-list .item-mu-list .intro-mu-list div:nth-child(2){
+        display: none;
+    }
+
+    .info-content .mu-list .item-mu-list .intro-mu-list div:nth-child(3) p{
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 15px;
+        margin: 0;
+        margin-top: 35px;
+        padding: 0 5px;
+    }
+
+    .info-content .mu-list .item-mu-list .intro-mu-list div:nth-child(3){
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .info-content .mu-list .item-mu-list .info-mu-list{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .info-content .mu-list .item-mu-list .intro-mu-list div:first-child{
+        bottom: 33px;
+    }
+
+    .info-content .mu-list .item-mu-list .intro-mu-list div:nth-child(3) p{
+        padding: 0 0 0 15px;
+    }
+
+    .info-content .mu-list .item-mu-list{
+        position: relative;
+        top: -30px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .info-content .mu-list .item-mu-list .intro-mu-list div:first-child{
+        bottom: 33px;
+    }
+
+    .info-content .mu-list .item-mu-list .intro-mu-list div:nth-child(3) p{
+        padding: 0 0 0 30px;
+    }
+}

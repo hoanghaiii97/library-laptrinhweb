@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương thức về thuộc tính</title>
+    <script src="./js/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            // // 1.Cick vào thẻ a hiển thị lên link của hình ảnh thông qua alert();
+            // $('a.get_link_img').click(function(){
+            //     var link_img ;
+            //     link_img = $('img').attr('src');
+            //     alert(link_img);
+            //     return false;
+            // });
+
+            // // 2.click vào thẻ a thì hình ảnh thay đổi kích thước
+            // $('a.get_link_img').click(function(){
+            //     var width_img;
+            //     width_img = $('img').attr('width', '500');
+            //     alert(width_img);
+            //     return false;
+            // });
+
+            // 3. click vào thẻ a có class = "removeAttr" sẽ xóa hình ảnh đi
+            $('a.removeAttr').click(function(){
+                $('img').removeAttr('src');
+                return false;
+            });
+
+        });
+    </script>
+
+    <img width="300" src="../attribute/images/học-lập-trình.jpg" alt="">
+    <a class="get_link_img" href="">Lấy thông tin</a>
+    <a class="removeAttr" href="">Hủy giá trị thuộc tính</a>
+</body>
+</html>

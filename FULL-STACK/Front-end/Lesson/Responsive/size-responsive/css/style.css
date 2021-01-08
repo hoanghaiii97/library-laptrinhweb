@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 13px;
+    color: #333;
+}
+
+#wrapper{
+    width: 960px;
+    margin: 0px auto;
+}
+
+#header, #footer{
+    padding: 15px 10px;
+    background: gray;
+}
+
+#content, #slidebar{
+    min-height: 600px;
+    padding: 10px;
+}
+
+#content{
+    width: 70%;
+    float: left;
+    background: #f5f5f5;
+}
+
+#slidebar{
+    width: 30%;
+    float: left;
+    background: #d5d5d5;
+}
+
+.clearfix{
+    clear: both;
+    display: block;
+}

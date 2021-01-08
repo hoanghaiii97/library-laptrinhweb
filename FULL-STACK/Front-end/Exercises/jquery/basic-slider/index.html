@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise basic slider Jquery</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <script>
+        $(document).ready(function () {
+            // Hiển thị hình ảnh mặc định           
+            var src_img_click, src_img_first;
+            src_img_first = $("#list_thumb li:first-child img").attr("src");
+            
+            // Border hình ảnh đầu tiên đc hiển thị
+            $("#list_thumb li:first-child").addClass("active");
+            
+            $("#show img").attr("src", src_img_first);
+            // console.log(src_img_first);
+
+            $("#list_thumb li a").click(function () {
+                // Lấy src từ hình ảnh được click
+                src_img_click = $(this).children("img").attr("src");
+                // console.log(src_img_click);
+
+                // Hiển thị hình ảnh vừa đc click
+                $("#show img").attr("src", src_img_click);
+
+                // Thêm border cho hình ảnh đc click
+                $("#list_thumb li").removeClass("active");
+                $(this).parent('li').addClass("active");
+                return false;
+            });
+        });
+    </script>
+
+
+    <div id="wrapper">
+        <h1>Exercise basic slider</h1>
+        <div id="wp_slider">
+            <div id="show">
+                <img src="./assets/images/thumb1.png" alt="">
+            </div>
+
+            <div id="wp_list_thumb">
+                <ul id="list_thumb">
+                    <li><a href=""><img src="./assets/images/thumb2.png" alt=""></a></li>
+                    <li><a href=""><img src="./assets/images/thumb1.png" alt=""></a></li>
+                    <li><a href=""><img src="./assets/images/thumb3.png" alt=""></a></li>
+                    <li><a href=""><img src="./assets/images/thumb4.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

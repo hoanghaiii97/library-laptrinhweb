@@ -1,0 +1,50 @@
+#wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 40px;
+    padding: 20px 0;
+    margin: 10px 0;
+}
+
+#show{
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+}
+
+#show img{
+    max-width: 100%;
+    height: auto;
+}
+
+#wp_list_thumb{
+    margin-top: 30px;
+}
+
+#wp_list_thumb ul#list_thumb li{
+    width: 80px;
+    float: left;
+    margin-right: 10px;
+}
+
+#wp_list_thumb ul#list_thumb li:hover{
+    cursor: pointer;
+}
+
+#wp_list_thumb ul#list_thumb li:last-child{
+    margin-right: 0;
+}
+
+#wp_list_thumb ul#list_thumb li a img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+}
+
+#wp_list_thumb ul#list_thumb li.active{
+    border: 3px solid royalblue;
+}

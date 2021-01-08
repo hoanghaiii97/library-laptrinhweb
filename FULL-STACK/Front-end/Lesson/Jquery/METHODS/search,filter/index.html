@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhóm phương thức tìm kiếm</title>
+    <script src="./js/jquery.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            // // 1. .eq(index) Tô màu đỏ cho đoạn văn thứ 3
+            // $('p').eq(2).css('color', 'red');
+
+            // // 2. .not(selector) style cho tất cả các p ko có class là highlight cho màu green
+            // $('p').not('.highlight').css('color', 'green');
+
+            // // 3. .filter(selector) lựa chọn all các thẻ p có class là hightlight cho màu đỏ
+            // $('p').filter('.highlight').css('color', 'red');
+
+            // // 4. .next(selector) Cho các đoạn văn sau .highlight có màu vàng
+            // $('p').filter('.highlight').next().css('color', 'gold');
+
+            // // 5. .nextAll(selector) Cho tất cả đoạn văn sau .highlight có màu vàng
+            // $('p').filter('.highlight').nextAll().css('color', 'gold');
+
+            // // 6. .prev(selector) Cho các đoạn văn trước .highlight có màu đỏ
+            // $('p').filter('.highlight').prev().css('color', 'red');
+
+            // // 7. .prevAll(selector) Cho tất cả đoạn văn trước .highlight có màu đỏ
+            // $('p').filter('.highlight').prevAll().css('color', 'red');
+
+            // 8. .is(selector)
+            $('p').click(function(){
+                if($(this).is('.highlight')){
+                    alert('Đây là highlight');
+                }
+            });
+        });
+    </script>
+
+    <p>Đoạn văn 1</p>
+    <p class="highlight">Đoạn văn 2</p>
+    <p>Đoạn văn 3</p>
+    <p>Đoạn văn 4</p>
+    <p class="highlight">Đoạn văn 5</p>
+    <p>Đoạn văn 6</p>
+</body>
+
+</html>

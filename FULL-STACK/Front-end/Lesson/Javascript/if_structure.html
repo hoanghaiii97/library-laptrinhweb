@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cấu trúc câu điều kiện if...else</title>
+</head>
+
+<body>
+    <script>
+        // ======= if ======
+        // var a = 10;
+        // if(a % 2 == 0){
+        //     document.write(a + ' là số chẵn');
+        // }
+
+
+        // ======= if...else =====
+        // var a = 11;
+        // if (a % 2 == 0) {
+        //     document.write(a + ' là số chẵn');
+        // }
+        // else {
+        //     document.write(a + ' là số lẻ');
+        // }
+
+        
+        // ============ if...else if....else ==========
+        var score = 10;
+        if (score >= 0 && score <= 10) {
+            // Điểm hợp lệ
+            // 0 1 2 3 4 5 6 7 8 9 10
+            if (score < 4) {
+                document.write('Điểm F');
+            }
+            else if (score < 5.5) {
+                document.write('Điểm D');
+            }
+            else if (score < 7) {
+                document.write('Điểm C');
+            }
+            else if (score < 8.5) {
+                document.write('Điểm B');
+            }
+            else {
+                document.write('Điểm A')
+            }
+        }
+        else {
+            alert('Điểm không hợp lệ, điểm thuộc vào [0,10]');
+        }
+    </script>
+</body>
+
+</html>

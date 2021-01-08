@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhóm selector lọc theo loại</title>
+    <script src="./js/jquery.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            // 1. Chọn thẻ a đầu tiên trong box cho color:red
+            // $(".box a:first-of-type").css('color','red');
+
+            // 2. Chọn thẻ a cuối cùng trong box cho color:red
+            // $(".box a:last-of-type").css('color','red');
+
+            // 3. Chọn tất cả các phần tử chỉ có 1 phần tử duy nhất
+            $(".box h2:only-of-type").css('color', 'red');
+        });
+    </script>
+
+    <div class="box">
+        <a href="">Link 1</a>
+        <p>Văn bản 1</p>
+        <h2>Tiêu đề 1</h2>
+
+        <a href="">Link 2</a>
+        <p>Văn bản 2</p>
+        
+        <a href="">Link 3</a>
+        <p>Văn bản 3</p>
+        <h2>Tiêu đề 2</h2>
+        <h2>Tiêu đề 3</h2>
+        <h2>Tiêu đề 4</h2>
+    </div>
+
+    <div class="box">
+        <h2>Tiêu đề 5</h2>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display-flex-grow</title>
+</head>
+
+<body>
+    <style>
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            background-color: lightcoral;
+            display: flex;
+            
+        }
+
+        .flex-item {
+            flex-basis: auto;
+            background-color: lightslategray;
+            text-align: center;
+            padding: 30px;
+            margin: 10px;
+            font-size: 20px;
+            color: lightyellow;
+            
+        }
+        .item-1{
+            flex-grow: 1;
+            /* flex-grow: quyết định tỉ lệ nở ra của phần tử flex-item so với ko gian dư của container */
+        }
+        .item-2{
+            flex-grow: 2;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+    <h1>Display-flex-grow</h1>
+    <div class="container">
+        <div class="flex-item item-1">1</div>
+        <div class="flex-item item-2">2</div>
+
+    </div>
+</body>
+
+</html>

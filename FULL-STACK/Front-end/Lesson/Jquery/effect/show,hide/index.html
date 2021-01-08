@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiệu ứng show, hide</title>
+    <script src="./js/jquery.min.js"></script>
+    <style>
+        #box {
+            width: 400px;
+            padding: 40px;
+            background-color: #2980b9;
+            text-align: center;
+            color: #fff;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            // // SHOW
+            $('#effect-show').click(function(){
+                $('#box').show(1000, function(){
+                    alert('Show done...');
+                });
+            });
+
+            // HIDE
+            $('#effect-hide').click(function(){
+                $('#box').hide(1000, function(){
+                    alert('Hide done...');
+                });
+            });
+            
+            // TOGGLE: khi click vào box nếu box đang hiện sẽ ẩn đi và ngược lại
+            $('#effect-toggle').click(function(){
+                $('#box').toggle(1000, function(){
+                    alert('Done...');
+                });
+            });
+        });
+    </script>
+
+    <h1>Hiệu ứng show và hide trong Jquery</h1>
+    <a href="#" id="effect-show">Show</a>
+    <a href="#" id="effect-hide">Hide</a>
+    <a href="#" id="effect-toggle">Toggle</a>
+    <div id="box">
+        BOX
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil doloremque provident a molestias nisi consectetur
+        quo enim, error odit eligendi maxime earum autem et laudantium vel. Incidunt distinctio ex voluptatum beatae
+        ipsum. Ad ipsum suscipit, non quo, accusantium aperiam fugit commodi, soluta fugiat iure qui consequuntur cum
+        error odit corporis. Eaque eos reprehenderit praesentium ipsum? Hic eum labore esse nam impedit illum inventore
+        eos iure doloremque magnam? Vel excepturi odio tempore, eveniet nulla non inventore sequi modi harum sint quod
+        corrupti quaerat facilis illo amet a odit aut quasi fugiat, laudantium totam itaque quas exercitationem qui.
+        Obcaecati ipsa perspiciatis harum.</p>
+</body>
+
+</html>

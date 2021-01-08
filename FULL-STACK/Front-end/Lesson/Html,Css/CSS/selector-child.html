@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>child-selector</title>
+</head>
+
+<body>
+    <style>
+        body{
+            width: 960px;
+            margin: 0 auto;
+        }
+        /* ul li:first-child {
+            font-weight: bold;
+            color: gold;
+        }
+        ul li:last-child{
+            font-weight: bold;
+            color: red;
+        }  */
+        ul li:nth-child(odd){
+            color:green;
+        }
+        /* odd: phần tử có chỉ số index chẵn bắt đầu từ 0
+           even: phần tử có chỉ số index lẻ  */
+        ul li:nth-child(even){
+            color: rgb(91, 183, 211);
+        }
+    </style>
+    <h1>child-selector</h1>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+        <li>item 6</li>
+        <li>item 7</li>
+        <li>item 8</li>
+    </ul>
+</body>
+
+</html>

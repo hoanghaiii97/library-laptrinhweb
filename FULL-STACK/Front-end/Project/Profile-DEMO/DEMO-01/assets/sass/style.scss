@@ -1,0 +1,17 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.profile-intro{
+    position: relative;
+    &-bgleft{
+        position: absolute;
+        height: 100%;
+        right: 430px;
+        img{
+            height: 100%;
+        }
+    }
+}

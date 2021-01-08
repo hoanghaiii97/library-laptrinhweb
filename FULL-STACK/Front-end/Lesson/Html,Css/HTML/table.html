@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị thông tin dạng bảng</title>
+</head>
+
+<body>
+    <h1>Hiển thị thông tin dạng bảng</h1>
+
+    <table border="1">
+        <tr>
+            <td>STT</td>
+            <td>Tên sản phẩm</td>
+            <td>Gía tiền</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Iphone 8</td>
+            <td>10.000.000đ</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Iphone X</td>
+            <td>15.000.000đ</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Iphone XS MAX</td>
+            <td>20.000.000đ</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table border="1">
+        <caption>Bảng giá điện thoại Iphone</caption>
+        <!-- caption: khai báo tên bảng -->
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Tên sản phẩm</th>
+                <th>Gía tiền</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Iphone 8</td>
+                <td>10.000.000đ</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Iphone X</td>
+                <td>15.000.000đ</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Iphone XS MAX</td>
+                <td>20.000.000đ</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <td>Tổng</td>
+            <td>3 thiết bị</td>
+            <td>45.000.000đ</td>
+        </tfoot>
+        </thead>
+    </table>
+
+    <hr>
+
+    <!-- Gộp hàng, gộp cột -->
+    <table border="1">
+        <caption>Bảng giá điện thoại Iphone</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">STT</th>
+                <!-- rowspan: gộp 2 phần tử đầu ở 2 hàng hàng -->
+
+                <th colspan="2">Sản phẩm</th>
+                <!-- colspan: gộp 2 phần tử ở 2 cột -->
+            </tr>
+            <tr>
+                <th>Tên sản phẩm</th>
+                <th>Gía tiền</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Iphone 8</td>
+                <td>10.000.000đ</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Iphone X</td>
+                <td>15.000.000đ</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Iphone XS MAX</td>
+                <td>20.000.000đ</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <td>Tổng</td>
+            <td>3 thiết bị</td>
+            <td>45.000.000đ</td>
+        </tfoot>
+        </thead>
+    </table>
+
+</body>
+
+</html>

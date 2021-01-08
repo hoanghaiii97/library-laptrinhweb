@@ -1,0 +1,326 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.wrapper{
+    overflow: hidden;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+                    /* ============ HEADER ===========*/
+#header{
+    background-color: rgb(166,49,56);
+    padding: 25px 0 10px 0;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#header form input, #header form button{
+    border-radius: 5px;
+}
+
+nav{
+    margin-top: 20px;
+    flex: 100%;
+}
+
+ul#main-menu li a{
+    display: inline-block;
+    padding: 6px 10px;
+    color: #eee;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul#main-menu li:first-child a{
+    padding-left: 0;
+    background-color: yellowgreen;
+    border-radius: 2px;
+}
+
+ul#main-menu li:last-child a{
+    padding-right: 0;
+}
+
+ul#main-menu li:hover{
+    cursor: pointer;
+    background-color: yellowgreen;
+    border-radius: 2px;
+}
+
+
+/* ============= WP-CONTENT ============= */
+
+                /* === Content ==== */
+#content{
+    width: 70%;
+    height: auto;
+    padding: 10px 0 10px 10px;
+    float: left;
+}
+
+ul#list-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content-item{
+    width: 250px;
+    min-height: 580px;
+    margin-bottom: 20px;
+    background-color: rgb(238,238,236);
+    border-radius: 2px;
+    padding: 15px;
+}
+
+.content-item img{
+    max-width: 100%;
+}
+
+ul#list-content li h3{
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    background-color: rgb(51,122,191);
+    padding: 5px 0;
+    margin: 0;
+}
+
+ul#list-content li:nth-child(2) h3{
+    background-color: rgb(227,104,38);
+}
+
+ul#list-content li:nth-child(3) h3{
+    background-color: rgb(166,0,0);
+}
+
+ul#list-content li:nth-child(4) h3{
+    background-color: rgb(88,185,72);
+}
+
+ul#list-content li:nth-child(5) h3{
+    background-color: rgb(185,81,158);
+}
+
+ul#list-content li:last-child h3{
+    background-color: rgb(86,169,222);
+}
+
+.content-item h4 span, .content-item a span{
+    color: rgb(35,40,45);
+}
+
+.content-item a i{
+    color: red;
+}
+
+ul#list-project{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+
+ul#list-project li{
+    flex: 25%;
+    padding: 10px;
+}
+
+ul#list-project li a{
+    display: block;
+}
+
+ul#list-project li img{
+    width: 100%;
+    height: 80px;
+}
+
+
+                    /* ========= Slidebar ========= */
+#slidebar{
+    width: 30%;
+    height: auto;
+    padding: 10px;
+    float: left;
+}
+
+.information a, .notify a, .students a{
+    display: block;
+    color: rgb(35,40,45);
+}
+
+.information a:hover, .notify a:hover, .students a:hover{
+    cursor: pointer;
+    color: brown;
+    text-decoration: none;
+}
+
+ul#list-img{
+    margin-top: 10px;
+}
+
+ul#list-img li img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+
+                /* =========== FOOTER ============ */
+#footer{
+    background-color: rgb(166,49,56);
+    padding-top: 20px;
+}
+
+#footer .ft-left{
+    display: flex;
+}
+
+#footer .ft-left .box-head{
+    margin-right: 10px;
+}
+
+#footer .ft-left img{
+    border-radius: 5px;
+}
+
+#footer .ft-left .box-body a{
+    text-decoration: none;
+    color: #eee;
+}
+
+#footer .ft-left .box-body a:hover{
+    cursor: pointer;
+    color: greenyellow;
+}
+
+#footer .ft-left span{
+    display: block;
+    color: #eee;
+    padding-bottom: 5px;
+}
+
+
+#footer .ft-right .box-head h3{
+    text-transform: uppercase;
+    color: #eee;
+    font-size: 22px;
+    text-align: center;
+}
+
+#footer .ft-right ul#list-contact{
+    margin-top: 15px;
+}
+
+#footer .ft-right ul#list-contact li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#footer .ft-right ul#list-contact li a{   
+    color: #eee;
+    padding: 6px 10px;
+    background-color: rgb(251,85,48);
+    border-radius: 3px;
+}
+
+ul#list-contact li:hover i{
+    transform: rotate(360deg);
+}
+
+ul#list-contact li i{
+    transition: all 1s;
+}
+
+ul#list-contact li:last-child{
+    margin-right: 0;
+}
+
+
+
+        /* ============= SLIDE SHOW ================*/
+#show{
+    max-width: 1140px;
+    max-height: 200px;
+}
+
+#show img{
+    max-width: 100%;
+    height: auto;
+}
+
+#list-slide-show{
+    margin-top: 10px;
+}
+
+ul#list-slide{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.wp-slider ul#list-slide li{
+    max-width: 19%;
+    margin-bottom: 15px;
+}
+
+.wp-slider ul#list-slide li a img{
+    max-width: 100%;
+    height: 60px;
+    display: block;
+    overflow: hidden;
+}
+
+.wp-slider ul#list-slide li.active{
+    border: 4px solid rgb(154,205,50);
+    border-radius: 2px;
+}
+
+
+/* ========================= Responsive ======================= */
+#icon-menu-responsive{
+    display: none;
+    position: absolute;
+    font-size: 20px;
+    top: 12px;
+    right: 15px;
+    cursor: pointer;
+    color: #f5f5f5;
+}
+
+ul#respon-menu{
+    display: none;
+    position: absolute;
+    background-color: rgb(166,49,56);
+    width: 100%;
+    right: 0;
+    margin-top: 5px;
+    text-align: center;
+}
+
+ul#respon-menu li a{
+    display: block;
+    padding: 5px 5px;
+    color: #f5f5f5;
+    text-decoration: none;
+    border-top: 1px solid rgb(238, 232, 232) ;
+}
+
+ul#respon-menu li:hover{
+    background-color: rgb(136, 207, 30);
+}
+    

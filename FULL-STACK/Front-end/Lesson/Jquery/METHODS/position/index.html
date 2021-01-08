@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương thức tọa độ khoảng cách</title>
+    <script src="./js/jquery.min.js"></script>
+</head>
+
+<body>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #wrapper {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        body {
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 25px;
+        }
+
+        #header,
+        #footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 20px 0;
+        }
+
+        #content {
+            padding: 20px 0;
+        }
+
+        #content p {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        #widget{
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            top: 200px;
+            left: 300px;
+        }
+    </style>
+
+
+
+    <script>
+        $(document).ready(function () {
+
+            // Lấy khoảng cách vị trí của thanh cuộn theo phương thẳng đứng và phương ngang
+            /** var window_scroll_top, window_scroll_left;
+            // $(window).scrollTop(200);
+            $(window).scroll(function(){
+            window_scroll_top =$(window).scrollTop();
+            window_scroll_left =$(window).scrollLeft();
+            console.log(window_scroll_top +"-"+ window_scroll_left);
+            });
+            */
+
+            // Lấy vị trí tương đối của content,footer so với vị trí trên cùng của trang web
+            // var content_top = $('#content').offset().top;
+            // var footer_top = $('#footer').offset().top;
+            // console.log(content_top + '-' + footer_top);
+
+
+            // Lấy vị trí tương đối selector absolute so với phần tử relative
+            var widget_top_content, widget_left_content;
+            widget_top_content = $('#widget').position().top;
+            widget_left_content = $('#widget').position().left;
+            console.log(widget_top_content + '-' + widget_left_content);
+        });
+    </script>
+
+
+
+    <div id="wrapper">
+
+        <div id="header">
+            Header
+        </div>
+        <!-- end header -->
+
+        <div id="content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed assumenda debitis fuga esse ipsam! Hic
+                atque eligendi expedita iusto. Esse eius saepe itaque eligendi explicabo obcaecati aperiam ex facilis.
+                Libero amet ad quod alias magnam reprehenderit, reiciendis dicta laboriosam commodi. Saepe
+                necessitatibus quibusdam expedita ipsam aliquam provident voluptatem, doloremque blanditiis, est aliquid
+                qui sunt animi delectus nostrum, error temporibus debitis natus neque quam laboriosam architecto? Quae
+                aperiam ex ipsam omnis? Id modi deleniti aspernatur et vel fuga, ea ducimus laudantium repellendus atque
+                ad aliquam? Dolorum nostrum repudiandae, tempora laborum, illo cum iste architecto amet eos unde fugit.
+                Nobis explicabo possimus eos blanditiis dolore minima numquam sequi inventore, eveniet dicta magni
+                voluptates mollitia earum! Eos impedit veritatis sint nostrum enim aut sequi dolore esse neque aperiam,
+                cupiditate illum fuga dicta libero cum vel ratione hic reprehenderit est? Eius, nihil illum eos sapiente
+                laborum nam doloribus repellendus nisi. Beatae nobis sequi vel.</p>
+            
+            <div id="widget">
+                Widget
+            </div>
+            
+            <p>Maxime, deleniti explicabo? Recusandae, similique incidunt repellat necessitatibus explicabo rerum quasi
+                nulla impedit, qui dolorem et tempora itaque quas veritatis cumque ducimus voluptate pariatur optio
+                quidem quibusdam cupiditate, commodi non. Aut necessitatibus a quasi explicabo. Nesciunt voluptatibus
+                pariatur, eum veritatis ducimus atque ad, autem odit ex eaque enim corrupti ipsa iure in ea laboriosam!
+                Magni neque, voluptates dolore iure voluptate itaque, iste nulla tempora quibusdam quas animi harum nam
+                voluptatem quae rem veritatis, recusandae vero assumenda obcaecati! Officiis ex tenetur nulla commodi
+                maiores at quia sunt aperiam quis, magnam earum labore consectetur obcaecati. Perspiciatis beatae, ea
+                velit veniam dolor perferendis! Expedita facere eveniet voluptatibus. Architecto facilis harum, expedita
+                mollitia, tempora non cumque omnis, quisquam ratione in sint dolor fugiat alias atque nisi ipsa.
+                Explicabo quod ipsum id error optio aut, praesentium hic saepe accusamus soluta harum! Quam, assumenda
+                quo cupiditate sint, facilis incidunt, voluptate aspernatur necessitatibus omnis id voluptas! Ex?</p>
+            <p>Neque, autem. Sit ullam aliquid, laborum laboriosam et quis consectetur! Maxime culpa neque consequatur
+                eius, illum quibusdam incidunt hic numquam qui, aliquid quidem eum assumenda! Sit molestias, dolorem et
+                possimus soluta id error ut rerum sapiente culpa similique tenetur, cumque suscipit. Inventore
+                voluptatem at nemo hic dolorem facere. Quia suscipit qui et perferendis optio, tenetur delectus, dolorum
+                adipisci, ea molestiae ipsum autem eveniet ducimus animi magnam maxime nihil deleniti? Maxime numquam ex
+                inventore aut veniam omnis quasi corrupti! Explicabo quaerat ducimus et! Nihil, debitis maxime qui
+                delectus vitae magni quod maiores non sit esse culpa illo reiciendis, eius modi porro sequi doloremque
+                architecto necessitatibus? Nobis aspernatur magni inventore quod, quibusdam enim ab architecto?
+                Provident est minus porro iste aliquid deserunt, dignissimos similique deleniti qui repellat et
+                exercitationem iusto explicabo laudantium labore accusamus asperiores dolore ullam earum enim. Nostrum
+                doloribus similique perferendis dolorem! Aspernatur eaque sapiente temporibus est doloremque,
+                perspiciatis explicabo.</p>
+            <p>Ut ad velit harum obcaecati molestias ullam ratione! Cum praesentium aspernatur totam maxime
+                voluptatibus, cumque esse, nisi ab nostrum velit et? At odit qui voluptas, modi sint voluptates
+                veritatis, impedit consectetur incidunt fuga tenetur ipsa error porro minima! Molestiae doloribus
+                voluptatibus aliquid in minus, consectetur nisi, tempore deleniti perspiciatis facilis rerum, placeat
+                corrupti a? Sapiente, quam blanditiis quo nobis explicabo accusamus quae ut maxime sed, itaque quisquam
+                quod hic nihil. Sed, est officia sint sit ut vitae, praesentium ipsam ipsa exercitationem delectus
+                illum, tenetur voluptates perspiciatis nostrum libero odio ex animi sunt assumenda. Harum, eius
+                assumenda. Ut, distinctio inventore. Rerum animi corporis dicta cupiditate amet rem ipsa reprehenderit
+                cumque itaque adipisci minima nam sapiente perferendis aut quidem voluptate quia, blanditiis iste sunt
+                laboriosam dolore! Rerum quos alias est qui. Nihil quis consequatur, saepe provident consequuntur
+                recusandae possimus praesentium, blanditiis amet doloribus cupiditate? Vel voluptate illum fuga expedita
+                totam dolor. Nulla.</p>
+            <p>Natus explicabo libero tempore eum reiciendis veniam alias laborum dolor, expedita ipsam corporis impedit
+                error quod assumenda quaerat cupiditate vero minima iure qui quidem consequatur dignissimos asperiores
+                voluptates distinctio. Temporibus commodi aspernatur beatae magni! Magni ratione, ea mollitia quos
+                voluptatum amet, doloremque delectus ducimus fuga minima animi voluptate deleniti facilis modi nam
+                dolorum? Neque provident aperiam reprehenderit facilis doloremque ab sit eaque totam ex est alias
+                dolorum itaque impedit nulla recusandae quo voluptates, omnis quis earum. Consequatur odio ipsam
+                pariatur inventore molestiae cum architecto maiores libero laborum quibusdam sunt iste consequuntur
+                porro dolorum repellat, eum nisi animi provident vitae placeat aliquid recusandae. Mollitia temporibus
+                odit sapiente similique cum dolores asperiores veritatis quibusdam officia. Eveniet hic reiciendis
+                accusantium rem magni natus, officia odit nesciunt exercitationem doloremque est ducimus quo sequi
+                veniam quibusdam unde incidunt cupiditate. Praesentium magnam veritatis placeat adipisci fugit sit?
+                Cumque nulla doloremque placeat adipisci dolorum, quaerat consequuntur nam?</p>
+        </div>
+        <!-- end content -->
+
+        <div id="footer">
+            Footer
+        </div>
+        <!-- end footer -->
+    </div>
+</body>
+
+</html>

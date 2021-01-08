@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+</head>
+
+<body>
+    <style>
+        .box-parent {
+            width: 500px;
+            height: 500px;
+            background-color: lightcoral;
+            position: relative;
+        }
+        .box-1, .box-2{
+            width: 100px;
+            height: 80px;
+            color: #fff;
+            text-align: center;
+            position: absolute;
+        }
+        .box-1{
+            background-color: lightseagreen;
+            top: 0;
+            left: 80px;
+            z-index: 1;
+        }
+        .box-2{
+            background-color: gold;
+            top: 50px;
+            left: 30px;
+            z-index: 2;
+        }
+    </style>
+    <h1>z-index</h1>
+    <div class="box-parent">
+        <div class="box-1">Box 1</div>
+        <div class="box-2">Box 2</div>
+    </div>
+</body>
+
+</html>

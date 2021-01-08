@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class clearfix - chống sập độ cao</title>
+</head>
+
+<body>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .parent {
+            width: 960px;
+            margin: 0 auto;
+            background-color: greenyellow;
+        }
+
+        .box-left {
+            width: 600px;
+            min-height: 600px;
+            float: left;
+            background-color: grey;
+        }
+
+        .box-right {
+            width: 360px;
+            min-height: 600px;
+            float: left;
+            background-color: rgb(142, 228, 142);
+        }
+
+        /* FILE RESET CSS */
+        .clearfix::after {
+            content: "";
+            display: block;
+            visibility: hidden;
+            line-height: 0;
+            height: 0;
+            clear: both;
+        }
+
+        .clearfix {
+            clear: both;
+            display: block;
+        }
+    </style>
+    <h1>Class clearfix - chống sập độ cao</h1>
+    <!-- Cách 1 - thêm trực tiếp vào khối bị sập độ cao -->
+    <div class="parent clearfix">
+        <div class="box-left">
+            LEFT
+        </div>
+        <div class="box-right">
+            RIGHT
+        </div>
+    </div>
+    <!-- Cách 2 - thêm clearfix vào trc thẻ đóng của khối bị sập độ cao -->
+    <!-- <div class="parent">
+        <div class="box-left">
+            LEFT
+        </div>
+        <div class="box-right">
+            RIGHT
+        </div>
+        <div class="clearfix"></div>
+    </div> -->
+</body>
+
+</html>

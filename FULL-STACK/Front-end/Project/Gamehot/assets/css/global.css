@@ -1,0 +1,56 @@
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.tf-bold{
+    text-transform: bold;
+}
+
+.clearfix{
+    clear: both;
+    display: block;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    clear: both;
+}
+
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.d-flex{
+    display: flex;
+}
+
+/* vvvvv.......... */

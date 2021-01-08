@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hàm trong js</title>
+</head>
+
+<body>
+    <script>
+        /*
+        // Hàm kiểm tra số chẵn
+        function checkEven(n){
+            if(n%2==0)
+            return true;
+            return false;
+        }
+        // Gọi hàm
+        alert(checkEven(14));
+        */
+
+        //Tính tổng các số chẵn từ 2-n
+        function checkEven(n) {
+            if (n % 2 == 0) return true;
+            return false;
+        }
+
+        function totalEven(n) {
+            var total = 0;
+            for (var i = 2; i <= n; i++) {
+                if (checkEven(i)) {
+                    total += i;
+                }
+            }
+            return total;
+        }
+        alert(totalEven(4));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+          /* MOBILE FIRST */
+
+/* 1. iPhone (480x640) */
+
+/* @media screen and (min-width: 320px){
+    body{
+        background: gold;
+    }
+} */
+
+
+/* 2. Tablet nhỏ (480x640) */
+
+/* @media screen and (min-width: 480px){
+    body{
+        background: blue;
+    }
+} */
+
+
+/* 3. Ipad dọc (768x1024) */
+
+/* @media screen and (min-width: 768px){
+    body{
+        background: black;
+    }
+} */
+
+
+/* 4. Ipad ngang (1024x768) */
+
+/* @media screen and (min-width: 1024px){
+    body{
+        background: yellow;
+    }
+} */
+
+
+
+        /* PC FIRST */
+/* width > 1024px */
+body{
+    background: yellow;
+}
+
+/* Ipad ngang (1024x768) */
+@media screen and (max-width: 1024px){
+    body{
+        background: black;
+    }
+}
+
+/* Ipad dọc (768x1024) */
+@media screen and (max-width: 1024px){
+    body{
+        background: blue;
+    }
+}
+
+/* Tablet nhỏ (480x640) */
+@media screen and (max-width: 480px){
+    body{
+        background: gold;
+    }
+}

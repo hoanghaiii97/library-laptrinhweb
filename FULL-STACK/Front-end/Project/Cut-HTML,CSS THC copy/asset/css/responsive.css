@@ -1,0 +1,155 @@
+@media screen and (min-width: 769px){
+    #header .navbar-header{
+        display: none;
+    }
+
+    #header .collapse{
+        display: block
+    }
+
+    #header ul.nav{
+        display: -webkit-box;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    #header ul#list-icon{display: none;}
+    
+    #header .navbar-header{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        transition: ease-in-out;
+    }
+
+    #header .collapse{
+        margin-top: 20px;
+    }
+
+    ul#list-categories {
+        margin-top: 30px;
+    }
+
+    #featured-product ul#list-product li{
+        width: 33%;
+    }
+
+    #featured-product #product-item .product-name {
+        padding-left: 60px;
+    }
+
+    #featured-product .price {
+        margin-left: 80px;
+    }
+
+    #featured-product button{
+        margin-left: 300px;
+    }
+
+    #featured-product ul#list-product li:hover ul#list-icon {
+        right: 55px;
+    }
+
+    #partner{
+        background: #f8f8f8;
+        padding: 20px 0 20px 320px;
+    }
+
+    #ads span {
+        color: white;
+        display: block;
+        font-size: 30px;
+        position: absolute;
+        top: 50px;
+        left: 130px;
+    }
+
+    #ads button {
+        color: #111111;
+        text-transform: uppercase;
+        position: absolute;
+        top: 120px;
+        left: 300px;
+        border: 0;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    #footer #top {
+        right: 25px;
+        bottom: 35px;
+    }
+
+    #about-us #subscribe span {
+        top: 40px;
+        left: 2px;
+        font-size: 23px;
+    }
+
+    #about-us #subscribe input {
+        top: 90px;
+        left: 65px;
+    }
+
+    #about-us #subscribe button {
+        top: 135px;
+        left: 120px;
+       
+    }
+
+    li#categories-item{
+        padding-left: 150px;
+    }
+}
+
+
+@media screen and (max-width: 576px){
+    #featured-product ul#list-product li{
+        width: 50%;
+    }
+
+    #header .navbar-header{
+        position: absolute;
+        top: -25px;
+        right: 0;
+        z-index: 10;
+    }
+
+    #featured-product button{
+        margin-left: 100px;
+    }
+
+    #partner{
+        background: #f8f8f8;
+        padding: 20px 0 20px 115px;
+    }
+
+    #ads span {
+        color: white;
+        display: block;
+        font-size: 30px;
+        position: absolute;
+        top: 35px;
+        left: 30px;
+        font-size: 18px;
+    }
+
+    #ads button {
+        top: 60px;
+        left: 123px;
+    }
+
+    li#categories-item{
+        padding-left: 40px;
+    }
+
+    #featured-product #product-item .product-name {
+        padding-left: 30px;
+    }
+
+    #featured-product .price {
+        margin-left: 50px;
+    }
+}

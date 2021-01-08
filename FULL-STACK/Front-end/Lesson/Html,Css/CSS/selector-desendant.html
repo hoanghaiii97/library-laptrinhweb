@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector tổ tiên con cháu</title>
+</head>
+
+<body>
+    <style>
+        ul#main-menu a {
+            color: brown;
+            font-size: 15px;
+        }
+
+        ul#main-menu ul.sub-menu a {
+            color: blue;
+        }
+    </style>
+    <ul id="main-menu">
+        <li><a href="">Trang chủ</a></li>
+        <li><a href="">Giới thiệu</a></li>
+        <li><a href="">Sản phẩm</a>
+            <ul class="sub-menu">
+                <li><a href="">Máy tính</a></li>
+                <li><a href="">Điện thoại</a></li>
+            </ul>
+        </li>
+        <li><a href="">Liên hệ</a></li>
+    </ul>
+</body>
+
+</html>

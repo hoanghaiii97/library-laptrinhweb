@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide JQUERY</title>
+    <link rel="stylesheet" href="./asset/css/reset.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <script src="./asset/js/jquery.min.js"></script>
+    <script src="./asset/js/main.js"></script>
+
+    <style>
+        .container {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: gold;
+        }
+
+        .slider {
+            position: relative;
+        }
+
+        .slider img {
+            position: absolute;
+            width: 100%;
+        }
+
+        .slider a {
+            display: block;
+            width: 90px;
+            height: 45px;
+            background-color: rgba(0, 0, 0, .67);
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            padding-top: 10px;
+        }
+
+        .next {
+            position: absolute;
+            top: 120px;
+            right: 0;
+        }
+
+        .prev {
+            position: absolute;
+            top: 120px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1> SLIDE JQUERY</h1>
+        <div class="slider">
+            <img class="slide-item" src="./asset/img/img-1.jpg" number="0" alt="">
+            <img class="slide-item" src="./asset/img/img-2.jpg" number="1" alt="" style="display: none;">
+            <img class="slide-item" src="./asset/img/img-3.jpg" number="2" alt="" style="display: none;">
+            <img class="slide-item" src="./asset/img/img-4.jpg" number="3" alt="" style="display: none;">
+            <img class="slide-item" src="./asset/img/img-5.jpg" number="4" alt="" style="display: none;">
+            <a href="" class="next">Next</a>
+            <a href="" class="prev">Prev</a>
+        </div>
+    </div>
+
+    <script>
+        // CÁCH 2: TỐI ƯU
+        $(document).ready(function () {
+
+            $('.next').click(function () {
+                changeImage('next');
+                return false;
+            });
+
+            $('.prev').click(function () {
+                changeImage('prev');
+                return false;
+            });
+
+        });
+        function changeImage(type) {
+            let imgSelectVisible = $('img.slide-item:visible');
+            let imgVisible = parseInt(imgSelectVisible.attr('number'));
+            let eqNumber = type === 'next' ? imgVisible + 1 : imgVisible - 1;
+
+            if (imgVisible === 0) {
+                eqNumber = $('.slide-item').length - 1;
+            }
+
+            if (eqNumber >= $('.slide-item').length) {
+                eqNumber = 0
+            }
+            $('img.slide-item').eq(eqNumber).fadeIn(2000);
+
+            imgSelectVisible.fadeOut();
+        }
+        setInterval(function(){
+            changeImage('prev');
+        },2000);
+    </script>
+</body>
+
+</html>

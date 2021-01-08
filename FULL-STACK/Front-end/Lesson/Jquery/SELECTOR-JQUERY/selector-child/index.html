@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhóm selector lọc theo phần tử con</title>
+    <script src="./js/jquery.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            // // 1. Chọn bài viết đầu tiên và cho color:red
+            // $("ul.list-post li:first-child").css('color', 'red');
+
+            // // 2. Chọn bài viết cuối cùng và cho color:blue
+            // $("ul.list-post li:last-child").css('color', 'blue');
+
+            // 3. :nth-child(index, even, odd, operation)
+            // $("ul.list-post li:nth-child(2)").css('color', 'blue');
+            // $("ul.list-post li:nth-child(even)").css('color', 'blue');
+            // $("ul.list-post li:nth-child(odd)").css('color', 'blue');
+            // $("ul.list-post li:nth-child(3n)").css('color', 'blue');
+
+            // 4. Chọn phần tử là con duy nhất của phần tử cha
+            $("ul.list-post li:only-child").css('color','red');
+        });
+    </script>
+
+    <ul class="list-post">
+        <li>Bài viết 1</li>
+        <li>Bài viết 2</li>
+        <li>Bài viết 3</li>
+        <li>Bài viết 4</li>
+        <li>Bài viết 5</li>
+        <li>Bài viết 6</li>
+        <li>Bài viết 7</li>
+        <li>Bài viết 8</li>
+        <li>Bài viết 9</li>
+        <li>Bài viết 10</li>
+    </ul>
+
+    <ul class="list-post">
+        <li>Bài viết 1</li>
+    </ul>
+</body>
+
+</html>

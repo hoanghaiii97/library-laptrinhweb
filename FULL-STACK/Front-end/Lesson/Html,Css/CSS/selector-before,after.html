@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector before, after</title>
+</head>
+
+<body>
+    <style>
+        h2:before {
+            content: "✌";
+            color: green;
+        }
+
+        h2:after {
+            content: "✌";
+            color: indianred;
+        }
+
+        .list-post a:after {
+            content: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ4VL-GhIxabH0yys1Aj3zpmUkIqHsygsFRu3LqB_Ni4WIV6M1I);
+
+        }
+    </style>
+
+    <h2>Selector before, after</h2>
+    <ul class="list-post">
+        <li><a href="" class="new">Bài viết số 1</a></li>
+        <li><a href="">Bài viết số 2</a></li>
+        <li><a href="">Bài viết số 3</a></li>
+        <li><a href="">Bài viết số 4</a></li>
+    </ul>
+</body>
+
+</html>

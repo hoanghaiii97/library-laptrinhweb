@@ -1,0 +1,12 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /LTW/FULL-STACK/WordPress/lmen/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /LTW/FULL-STACK/WordPress/lmen/index.php [L]
+</IfModule>
+
+# END WordPress

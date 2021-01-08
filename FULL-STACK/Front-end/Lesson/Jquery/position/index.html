@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhóm selector định vị</title>
+    <script src="./js/jquery.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            // // 1.Định vị theo index: chọn phần tử có chỉ số 1 cho color:red
+            // $("p:eq(1)").css('color', 'red');
+
+            // // 2. Chọn phần tử p đầu tiên cho color:red
+            // $("p:first").css('color', 'red');
+
+            // // 3. Chọn phần tử p cuối cùng cho color:red
+            // $("p:last").css('color', 'red');
+
+            // // 4. Chọn phần tử p có chỉ số index>1 cho color:red
+            // $("p:gt(1)").css('color', 'red');
+
+            // // 5. Chọn phần tử p có chỉ số index>3 cho color:red
+            // $("p:lt(3)").css('color', 'red');
+
+            // // 6.Chọn phần tử chỉ số index lẻ co color:red
+            // $("p:odd").css('color','red');
+
+            // // 7.Chọn phần tử chỉ số index lẻ co color:green
+            // $("p:even").css('color','green');
+
+            // 8.Chọn tất cả các phần tử ơp ngoại trừ chỉ số index=2 cho color:red
+            $("p:not('p:eq(2)')").css('color', 'red');
+        });
+    </script>
+
+    <p>Đoạn văn 1</p>
+    <p>Đoạn văn 2</p>
+    <p>Đoạn văn 3</p>
+    <p>Đoạn văn 4</p>
+    <p>Đoạn văn 5</p>
+    <p>Đoạn văn 6</p>
+    <div class="box">
+        <p>Đoạn văn 7</p>
+        <p>Đoạn văn 8</p>
+        <p>Đoạn văn 9</p>
+    </div>
+    <a href="">Link 1</a>
+    <a href="">Link 2</a>
+</body>
+
+</html>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUT-HTML,CSS</title>
+    <link rel="stylesheet" href="./library-bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./asset/fontawesome-free-5.15.1-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <script src="./asset/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="./asset/js/popper.min.js"></script>
+    <script src="./library-bootstrap/js/bootstrap.min.js"></script>
+    <script src="./library-bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
+</head>
+
+<body>
+    <div id="site">
+        <div id="wrapper">
+            <div id="header">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-4">
+                            <img src="./asset/img/logo.png" alt="">
+                        </div>
+
+                        <div class="col-lg-8 col-md-8">
+                            <nav class="navbar navbar-inverse">
+
+                                <div class="navbar-header">
+                                    <button type="button" class="fas fa-bars" data-toggle="collapse"
+                                        data-target="#myNavbar">
+                                    </button>
+                                </div>
+                                
+                                <div class="collapse navbar-collapse" id="myNavbar">
+                                    <ul class="nav navbar-nav">
+                                        <li><a href="">HOME</a></li>
+                                        <li><a href="">PAGES</a></li>
+                                        <li><a href="">SHOP</a></li>
+                                        <li><a href="">PORTFOU</a></li>
+                                        <li><a href="">BLOCK</a></li>
+                                        <li><a href="">CONTACT</a></li>
+                                    </ul>
+                                </div>
+
+                            </nav>
+
+                        </div>
+
+                        <div class="col-lg-2 col-md-4">
+                            <ul class="list-unstyled" id="list-icon">
+                                <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href=""><i class="fas fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END HEADER -->
+
+            <div id="wp-content">
+
+                <div class="container-fluid">
+
+                    <div id="categories" class="row">
+                        <div class="col-lg-9 col-md-12 col-sm-12 col-12" id="slider">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./asset/img/slide2.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./asset/img/slide1.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+                            <ul class="list-unstyled" id="list-categories">
+                                <li id="categories-item">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-6">
+                                            <img src="./asset/img/Rectangle-small.png" alt="">
+                                            <span>#SHIRT</span>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-6">
+                                            <img src="./asset/img/jean.png" alt="">
+                                            <span>#PANT</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li id="categories-item">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-6">
+                                            <img src="./asset/img/shoes.png" alt="">
+                                            <span>#SHOES</span>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-6">
+                                            <img src="./asset/img/bag.png" alt="">
+                                            <span>#BAG</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li id="categories-item">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-6">
+                                            <img src="./asset/img/Rectangle-small.png" alt="">
+                                            <span>#COAT</span>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-6">
+                                            <img src="./asset/img/Rectangle-small.png" alt="">
+                                            <span>#PANT</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end categories -->
+
+                    <div id="featured-product">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3># FEATURED PRODUCTS</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, sapiente nam
+                                    nesciunt
+                                    maxime cumque culpa quis ipsam nemo quasi porro.</p>
+                            </div>
+                        </div>
+
+
+                        <ul class="list-unstyled" id="list-product">
+                            <li>
+                                <div id="product-item">
+                                    <img class="img-fluid" src="./asset/img/Rectangle-product.png" alt="">
+                                    <a class="product-name" href="">Lunatic shirt</a>
+                                    <div class="price">
+                                        <span>#60$</span>
+                                    </div>
+                                    <div class="stick">
+                                        <span>Sale</span>
+                                    </div>
+                                    <ul class="list-unstyled" id="list-icon">
+                                        <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+                                        <li><a href=""><i class="fas fa-search"></i></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div id="product-item">
+                                    <img class="img-fluid" src="./asset/img/Rectangle-product.png" alt="">
+                                    <a class="product-name" href="">Lunatic shirt</a>
+                                    <div class="price">
+                                        <span>#60$</span>
+                                    </div>
+
+                                    <ul class="list-unstyled" id="list-icon">
+                                        <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+                                        <li><a href=""><i class="fas fa-search"></i></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div id="product-item">
+                                    <img class="img-fluid" src="./asset/img/Rectangle-product.png" alt="">
+                                    <a class="product-name" href="">Lunatic shirt</a>
+                                    <div class="price">
+                                        <span>#60$</span>
+                                    </div>
+                                    <div class="stick">
+                                        <span>Sale</span>
+                                    </div>
+                                    <ul class="list-unstyled" id="list-icon">
+                                        <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+                                        <li><a href=""><i class="fas fa-search"></i></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div id="product-item">
+                                    <img class="img-fluid" src="./asset/img/Rectangle-product.png" alt="">
+                                    <a class="product-name" href="">Lunatic shirt</a>
+                                    <div class="price">
+                                        <span>#60$</span>
+                                    </div>
+
+                                    <ul class="list-unstyled" id="list-icon">
+                                        <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+                                        <li><a href=""><i class="fas fa-search"></i></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div id="product-item">
+                                    <img class="img-fluid" src="./asset/img/Rectangle-product.png" alt="">
+                                    <a class="product-name" href="">Lunatic shirt</a>
+                                    <div class="price">
+                                        <span>#60$</span>
+                                    </div>
+                                    <div class="stick">
+                                        <span>Sale</span>
+                                    </div>
+                                    <ul class="list-unstyled" id="list-icon">
+                                        <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+                                        <li><a href=""><i class="fas fa-search"></i></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div id="product-item">
+                                    <img class="img-fluid" src="./asset/img/Rectangle-product.png" alt="">
+                                    <a class="product-name" href="">Lunatic shirt</a>
+                                    <div class="price">
+                                        <span>#60$</span>
+                                    </div>
+
+                                    <ul class="list-unstyled" id="list-icon">
+                                        <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+                                        <li><a href=""><i class="fas fa-search"></i></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div id="product-item">
+                                    <img class="img-fluid" src="./asset/img/Rectangle-product.png" alt="">
+                                    <a class="product-name" href="">Lunatic shirt</a>
+                                    <div class="price">
+                                        <span>#60$</span>
+                                    </div>
+                                    <div class="stick">
+                                        <span>Sale</span>
+                                    </div>
+                                    <ul class="list-unstyled" id="list-icon">
+                                        <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+                                        <li><a href=""><i class="fas fa-search"></i></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div id="product-item">
+                                    <img class="img-fluid" src="./asset/img/Rectangle-product.png" alt="">
+                                    <a class="product-name" href="">Lunatic shirt</a>
+                                    <div class="price">
+                                        <span>#60$</span>
+                                    </div>
+                                    <ul class="list-unstyled" id="list-icon">
+                                        <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+                                        <li><a href=""><i class="fas fa-search"></i></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div id="product-item">
+                                    <img class="img-fluid" src="./asset/img/Rectangle-product.png" alt="">
+                                    <a class="product-name" href="">Lunatic shirt</a>
+                                    <div class="price">
+                                        <span>#60$</span>
+                                    </div>
+                                    <div class="stick">
+                                        <span>Sale</span>
+                                    </div>
+                                    <ul class="list-unstyled" id="list-icon">
+                                        <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+                                        <li><a href=""><i class="fas fa-search"></i></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div id="product-item">
+                                    <img class="img-fluid" src="./asset/img/Rectangle-product.png" alt="">
+                                    <a class="product-name" href="">Lunatic shirt</a>
+                                    <div class="price">
+                                        <span>#60$</span>
+                                    </div>
+
+                                    <ul class="list-unstyled" id="list-icon">
+                                        <li><a href=""><i class="fas fa-heart"></i></a></li>
+                                        <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+                                        <li><a href=""><i class="fas fa-search"></i></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                        </ul>
+
+
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-12">
+                                <button>VIEW ALL PRODUCT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end product -->
+
+                    <div id="partner">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-12">
+                                <img src="./asset/img/wickd.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end partner -->
+
+                    <div id="ads">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-12">
+                                <img class="img-fluid" src="./asset/img/img-ad.png" alt="">
+                                <span>Life is too short to wear boring clothes</span>
+                                <button>Shop now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end ads -->
+
+                    <div id="latest-from-new">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-12">
+                                <h3># last from new</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est incidunt error molestias
+                                    impedit
+                                    earum obcaecati voluptatum et quas odit temporibus!</p>
+                            </div>
+                        </div>
+
+                        <div id="list-latest">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6 col-12">
+                                    <div id="list-latest-item">
+                                        <img class="img-fluid" src="./asset/img/img-latest.png" alt="">
+                                        <a>Fashion guide : Dress like a famous rockstar</a>
+                                        <span>18-March-2018</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-6 col-12">
+                                    <div id="list-latest-item">
+                                        <img class="img-fluid" src="./asset/img/img-latest.png" alt="">
+                                        <a>Fashion guide : Dress like a famous rockstar</a>
+                                        <span>18-March-2018</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-6 col-12">
+                                    <div id="list-latest-item">
+                                        <img class="img-fluid" src="./asset/img/img-latest.png" alt="">
+                                        <a>Fashion guide : Dress like a famous rockstar</a>
+                                        <span>18-March-2018</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-6 col-12">
+                                    <div id="list-latest-item">
+                                        <img class="img-fluid" src="./asset/img/img-latest.png" alt="">
+                                        <a>Fashion guide : Dress like a famous rockstar</a>
+                                        <span>18-March-2018</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end latest from new -->
+
+                    <div id="about-us">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div id="testimonial">
+                                    <span>"</span>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, fuga repellat
+                                        ratione deserunt, ducimus vitae autem optio mollitia vero quibusdam est nobis
+                                        eligendi corporis in ullam voluptas ea dolorum? Excepturi, cumque necessitatibus
+                                        vitae harum consequatur qui magni nulla rerum! At iusto dolores est perferendis
+                                        deleniti nostrum exercitationem ab. Animi, ratione!</p>
+                                    <strong>by devin byrd</strong>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div id="subscribe">
+                                    <img class="img-fluid" src="./asset/img/img-about-us.png" alt="">
+                                    <span># Subscribe for new letter</span>
+                                    <img src="./asset/img/Rectangle 17.png" alt="">
+                                    <input type="text">
+                                    <button>subscribe</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- end about us -->
+                </div>
+            </div>
+
+            <div id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div id="contact">
+                                <img src="./asset/img/logo.png" alt="">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A deleniti dolorum nisi
+                                    distinctio
+                                    molestiae sapiente doloremque, ad accusantium tenetur quibusdam?</p>
+                                <span>#facebook</span>
+                                <span>#twitter</span>
+                                <span>#instagram</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3">
+                            <div id="address">
+                                <h4>INFO</h4>
+                                <br>
+                                <i class="fas fa-house-user"></i>
+                                <span>3064 Geneva Street , NewYork , USA</span>
+                                <br>
+                                <br>
+                                <i class="fas fa-phone-alt"></i>
+                                <span>+1-202-555-0157</span>
+                                <br>
+                                <br>
+                                <i class="fas fa-envelope"></i>
+                                <span>Azenfashion@gmail.com</span>
+                                <br>
+                                <br>
+                                <i class="fas fa-clock"></i>
+                                <span>Monday - Saturday : ́8:00 am - 18:00 pm Sunday : Closed</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3">
+                            <div id="social-network">
+                                <h4>INSTAGRAM</h4>
+                                <br>
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-3 col-4">
+                                        <img class="img-fluid" src="./asset/img/img-footer.png" alt="">
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6 col-sm-3 col-4">
+                                        <img class="img-fluid" src="./asset/img/img-footer.png" alt="">
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6 col-sm-3 col-4">
+                                        <img class="img-fluid" src="./asset/img/img-footer.png" alt="">
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6 col-sm-3 col-4">
+                                        <img class="img-fluid" src="./asset/img/img-footer.png" alt="">
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6 col-sm-3 col-4">
+                                        <img class="img-fluid" src="./asset/img/img-footer.png" alt="">
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6 col-sm-3 col-4">
+                                        <img class="img-fluid" src="./asset/img/img-footer.png" alt="">
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6 col-sm-3 col-4">
+                                        <img class="img-fluid" src="./asset/img/img-footer.png" alt="">
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-6 col-sm-3 col-4">
+                                        <img class="img-fluid" src="./asset/img/img-footer.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3">
+                            <div id="top">
+                                top
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END FOOTER -->
+        </div>
+        <!-- END WRAPPER -->
+    </div>
+</body>
+
+</html>

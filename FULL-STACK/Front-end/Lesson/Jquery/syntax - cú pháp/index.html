@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cú pháp viết code jquery</title>
+    <script src="./js/jquery.min.js"></script>
+</head>
+
+<body>
+    <script>
+        /* VD1:
+        $(document).ready(
+            function () {
+                // thay đổi dữ liệu cho đối tượng nào?--- p: selector , thay đổi cái gì?---- text: action
+                $('p').text(' Tên tôi là Đỗ Hoàng Hải');
+            }
+            );
+        */
+
+        // VD2:
+        $(document).ready(
+            function(){
+                $('p span.first-name').text('Đỗ Hoàng');
+                $('p span.last-name').text('Hải');
+            }
+        );
+    </script>
+    <!-- VD1 -->
+    <p>Dữ liệu ban đầu</p>  <!-- => Tên tôi là Đỗ Hoàng Hải -->
+
+    <!-- VD2 -->
+    <p>Họ: <span class="first-name"></span></p>  <!-- => Đỗ Hoàng -->
+    <p>Tên: <span class="last-name"></span></p>  <!-- =>  Hải -->
+
+</body>
+
+</html>

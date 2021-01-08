@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display-none</title>
+    <style>
+        .sub-menu{
+            display: none;
+        }
+        #main-menu li:hover .sub-menu{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display-none</h1>
+    <ul id="main-menu">
+        <li><a href="">Trang chủ</a></li>
+        <li><a href="">Giới thiệu </a></li>
+        <li><a href="">Sản phẩm</a>
+            <ul class="sub-menu">
+                <li><a href="">Giày</a></li>
+                <li><a href="">Túi xách</a></li>
+            </ul>
+        </li>
+        <li><a href="">Liên hệ</a></li>
+    </ul>
+</body>
+</html>

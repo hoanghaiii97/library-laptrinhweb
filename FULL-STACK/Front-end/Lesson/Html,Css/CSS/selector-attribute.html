@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute selector</title>
+</head>
+
+<body>
+    <style>
+        /* Chọn tất cả các phần tử có thuộc tính trong */
+            a[href] {
+            color: royalblue;
+        }
+
+        /* Chọn tất cả các phần tử có thuộc tính bằng */
+            a[href="unitop.vn"] {
+            color: brown;
+        }
+
+        /* Chọn tất cả các phần tử có thuộc tính chứa chuỗi
+            a[href*="unitop.vn"]{
+            color: brown;
+        } */
+
+        /* Chọn tất cả các phần tử có thuộc tính kết thúc bằng 
+            a[href$="vn"]{
+            color: brown;
+        } */
+
+        /* Chọn tất cả các phần tử có thuộc tính bắt đầu bằng
+            a[href^="vn"]{
+            color: brown;
+        } */
+    </style>
+
+    <h1>attribute selector</h1>
+    <a href="unitop.vn">PHP master</a><br>
+    <a href="google.vn">Bootstrap AZ</a>
+</body>
+
+</html>

@@ -1,0 +1,519 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#header{
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#header img{
+    width: 100%;
+    padding: 20px;
+}
+
+ul#main-menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 20px 0;
+}
+
+ul#main-menu li a{
+    color: #333;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+ul#main-menu li:hover #list-item{
+    display: block;
+}
+
+ul#list-item{
+    display: none;
+    background: #e5e5e5;
+    list-style: none;
+    border: 2px solid #e5e5e5;
+    padding: 0;
+    position: absolute;
+    top: 84px;
+    box-shadow: 5px 5px 5px #e5e5e5;
+    z-index: 2;
+}
+
+ul#list-item::before{
+    content: "";
+    border-width: 20px 30px;
+    border-style: solid;
+    border-color: transparent transparent #e5e5e5 transparent;
+    position: absolute;
+    left: -2px;
+    top: -42px;
+}
+
+ul#list-item li{
+    border-bottom: 1px solid white;
+    padding: 5px 0;
+}
+
+ul#list-item li:hover{
+    background: orange;
+}
+
+ul#list-item li a{   
+    font-weight: normal;
+    margin: 20px;
+}
+
+/* ================= Menu Responsive ================ */
+
+#icon-menu-responsive{
+    display: none;
+    font-size: 30px;
+    color: #777;
+    padding: 3px 10px;
+    border-radius: 2px;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    background: rgb(231, 228, 228);
+    margin: 10px 0;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#respon-menu{
+    display: none;
+    list-style: none;
+    padding: 0 15px;
+    margin-top: 60px;
+}
+
+#respon-menu li{
+    border-bottom: 1px solid #999;
+    padding-bottom: 10px;
+}
+
+#respon-menu li:first-child{
+    border-top: 1px solid #999;
+}
+
+#respon-menu li a{
+    color: #333;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#respon-menu #list-item{
+    display: none;
+    position: relative;
+    top: 0;
+}
+
+#respon-menu #list-item::before{
+    display: none;
+}
+
+#respon-menu a.drop-down{
+    position: absolute;
+    right: 15px;
+    font-size: 25px;
+}
+
+/* ============ end header ============== */
+
+                /* Icon FB,YTB */
+.group-icon {
+    margin: 10px;
+    position: fixed;
+    bottom: 30%;
+    z-index: 999;
+    width: 60px;
+    height: 110px;
+    background-color: wheat;
+    border-radius: 20px;
+}
+
+.group-icon .icon{
+    position: absolute;
+}
+
+.group-icon .icon:first-child{
+    top: 14px;
+    left: 10px;
+}
+
+.group-icon .icon:last-child{
+    top: 60px;
+    left: 10px;
+}
+
+.group-icon .icon img{
+    width: 70%;
+}
+
+.group-icon .icon a{
+    text-decoration: none;
+}
+
+.group-icon .icon:hover{
+    transform: scale(1.5);
+    transition: linear 0.3s;
+}
+
+                    /* PHONE */
+.contact{
+    width: 250px;
+    height: 60px;
+    background-color: red;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    position: fixed;
+    bottom: 10px;
+    z-index: 10;
+}
+
+.tel{
+    border-radius: 10px;
+    position: absolute;
+    top: 11px;
+    left: 17px;
+}
+
+.tel img{
+    width: 70%;
+}
+
+.number-phone{
+    position: absolute;
+    color: white;
+    bottom: -6px;
+    left: 70px;
+}
+
+.number-phone p{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+                    /* Service */
+.service{
+    position: fixed;
+    top: 50%;
+    right: -20px;
+    z-index: 10;
+}
+
+.service a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    position: absolute;
+}
+
+.service a:hover{
+    color: rgb(192, 20, 178);
+}
+
+.regist a{
+    right: 40px;
+    top: 10px;
+}
+
+.order a{
+    top: 66px;
+    right: 30px;
+}
+
+.regist, .order{
+    width: 200px;
+    height: 50px;
+    background-color: tomato;
+    margin-bottom: 5px;
+    border-radius: 20px;
+}
+
+                        /* Message us */
+.inbox{
+    width: 200px;
+    height: 30px;
+    background: rgb(84, 181, 219);
+    border-radius: 2px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 5px;
+    /* padding: 10px; */
+    z-index: 999;
+}
+
+.inbox img{
+    padding-top: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.inbox span{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/* */
+.inbox-us{
+    width: 300px;
+    height: 400px;
+    background-color: rgb(84, 181, 219);
+    border-radius: 5px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    margin-right: 5px;
+    display: none;
+}
+
+.title-inbox{
+    position: relative;
+}
+
+.title-inbox p{
+    color: #fff;
+    padding-top: 5px;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.title-inbox a{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.content-inbox{
+    width: 280px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+}
+
+.content-inbox form input, textarea{
+    font-size: 16px;
+    width: 250px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.content-inbox form button{
+    width: 250px;
+    background-color: rgb(84, 181, 219);
+    margin-left: 15px;
+    margin-top: 10px;
+    color: #fff;
+
+}
+
+                            /* Back top top */
+.back-to-top{
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: url(../img/back_to_top_1.png) left top / 100% 100% no-repeat;
+    position: fixed;
+    bottom: 5px;
+    right: 21%;
+    cursor: pointer;
+    stop-opacity: 0;
+    z-index: 1000000;
+    opacity: 0.8;
+}
+
+/* ====================== end navigation ======================= */
+
+#wp-content .box-decorate{
+    position: absolute;
+    top: 84px;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    z-index: -10;
+    overflow: hidden;
+}
+
+#wp-content .car-name{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 900px;
+}
+
+#wp-content .slogan{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#wp-content .item-productprice{
+    width: 200px;
+    height: 40px;
+    background-color: rgb(60,89,155);
+    margin-top: 10px;
+}
+
+#wp-content .item-productprice:hover{
+    background-color: tomato;
+    cursor: pointer;
+}
+
+#wp-content .item-productprice a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.menu-details img{
+    margin-left: 10px;
+}
+
+.menu-details p{
+    font-size: 17px;
+    color: rgb(60,89,155);
+    font-weight: 600;
+}
+
+.grand-i10-lg{
+    border-bottom: 1px solid #ccc;
+}
+
+.grand-i10-lg img{
+    margin-bottom: 10px;
+}
+
+ul#menu-info{
+    list-style: none;
+    margin-top: 15px;
+}
+
+ul#menu-info li{
+    display: inline;
+    margin-right: 15px;
+}
+
+ul#menu-info li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(60,89,155);
+}
+
+/* Properties content */
+
+.properties-content img{
+    width: 100%;
+}
+
+.content-header{
+    padding: 150px 0 35px 0;
+    line-height: 25px;
+    color: #0E528B;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+}
+.properties-content .text-1{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 25px
+}
+
+.properties-content .text-2{
+    color: #666; 
+    text-align: center; 
+    font-size: 18px; 
+    font-weight: 600;
+}
+
+
+
+/* Regist-info */
+
+#wp-content .regist-info{
+    max-width: 100%;
+    padding: 30px 0;
+}
+
+/* ============= end wp-content =========== */
+#footer{
+    background-color: rgb(39,45,58);
+}
+
+.footer-top{
+    padding: 30px 0;
+}
+
+.footer-headings {
+    font-size: 16px;
+    margin: 0;
+    padding-bottom: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.footer-top .top-line {
+    background: #fff;
+    height: 1px;
+    margin: 0;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.footer-img ul{
+    margin: 0;
+    padding: 0;
+}
+
+.footer-img ul li {
+    display: inline-block;
+    max-width: 35%;
+    padding: 5px !important;
+    position: relative;
+    margin-top: 0px !important;
+    margin-bottom: 5px !important;
+}
+
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.overlay{
+    position: absolute;
+    top: 15px;
+    left: 35px;
+}
+
+
+
+
+
+
+
+

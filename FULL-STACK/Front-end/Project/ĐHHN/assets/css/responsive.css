@@ -1,0 +1,95 @@
+@media screen and (max-width: 1024px){
+    #wrapper{
+        width: 100%;
+    }
+}
+
+/* ======================= IPAD ==================== */
+@media screen and (max-width: 768px){
+
+    #content{
+        width: 70%;
+    }
+
+    #slidebar{
+        width: 30%;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    #footer .ft-left{
+        width: 70%;
+    }
+
+    #footer .ft-right{
+        width: 30%;
+    }
+
+    #main-menu{
+        display: none;
+    }
+
+    #icon-menu-responsive{
+        display: block;
+    }
+
+    form{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    ul#list-contact{
+        position: absolute;
+        right: 0;
+    }
+
+}
+
+
+/* ====================== MOBILE ====================== */
+@media screen and (max-width: 480px){
+    .wp-slider{
+        display: none;
+    }
+
+    #content, #slidebar, .container{
+        width: 100%;
+    }
+
+    #slidebar ul#list-img li{
+        width: 100%;
+    }
+
+    #slidebar ul#list-img li img{
+        width: 340px;
+    }
+
+    #content ul#list-content li{
+        width: 100%;
+    }
+
+    #content ul#list-content li .content-item{
+        width: 340px;
+    }
+
+    #content ul#list-project{
+        display: none;
+    }
+
+    #footer .container{
+        width: 100%;
+    }
+
+    ul#list-contact{
+        position: inherit;
+        margin-right: 22px;
+        margin-left: 40px;
+    }
+
+    ul#list-contact li{
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5rem;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+$primary-color: #C0A33E;
+$text-color: #000;
+
+// header
+.header{
+    &__logo{
+
+        &--list{
+            margin-top: 10px;
+        }
+        
+        &--icon{
+            font-size: 25px;
+            padding-left: 10px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        &--minus{
+            position: absolute;
+            top: 5px;
+            z-index: 10;
+            display: none;
+            width: 200px;
+            height: 300px;
+            a{
+                color: $text-color;
+            }
+            i{
+                font-size: 25px;
+                padding: 15px 13px ;
+                background: #f2f2f2;
+                &:hover{
+                cursor: pointer;
+            }
+            }
+        }
+    }
+
+    &__main--menu{
+        li a{
+            &:hover{
+                color: $primary-color !important;
+            }
+        }
+    }
+
+    &__list--icon{
+        a{
+            position: relative;
+            &:nth-child(2){
+                &::after{
+                    content: "3";
+                    font-size: 11px;
+                    color: white;
+                    background: $text-color;
+                    border-radius: 100px;
+                    padding: 0 5px;
+                    position: absolute;
+                    top: -5px;
+                    right: -11px;
+                }
+            }
+
+            &:nth-child(3){
+                &::after{
+                    content: "2";
+                    font-size: 11px;
+                    color: white;
+                    background: $text-color;
+                    border-radius: 100px;
+                    padding: 0 5px;
+                    position: absolute;
+                    top: -5px;
+                    left: 11px;
+                }
+            }
+        }
+    }
+}
+
+// ship
+.ship{
+    &__way{
+        position: relative;
+    }
+    &__ellipse{
+        z-index: 10;
+    }
+    &__line{
+        position: absolute;
+        
+    }
+}
+
+// viewship
+.viewship{
+    &__method{
+        border: 1px solid #BDBDBD;
+    }
+}
+
+.products{
+    &__link{
+        button{
+            background: $primary-color;
+            border: none;
+            padding: 5px 15px;
+        }
+    }
+}
+
+// footer
+.footer{
+    &__logo{
+        h2{
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        } 
+    }
+    &__contact{
+        h2{
+            margin-bottom: 40px;
+        } 
+    }
+    &__product{
+        h2{
+            margin-bottom: 40px;
+        } 
+    }
+}

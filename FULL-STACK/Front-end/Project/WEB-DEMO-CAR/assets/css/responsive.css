@@ -1,0 +1,12 @@
+/* Menu responsive */
+@media screen and (max-width: 992px){
+    #header .col-lg-2:first-child{display: none;}
+    #header .col-lg-8 #main-menu{display: none;}
+    #header .col-lg-8 #icon-menu-responsive{display: block;}
+}
+
+/* Navigation */
+@media screen and (max-width: 768px){
+    .group-icon{display: none;}
+    .service{display: none;}
+}

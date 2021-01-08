@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập hiển thị danh sách dạng lưới</title>
+    <link rel="stylesheet" href="./library-bootstrap/css/bootstrap.min.css">
+    <script src="./js/jquery-3.5.1.slim.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./library-bootstrap/js/bootstrap.min.js"></script>
+    <script src="./library-bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <style>
+        .product-thumb:hover{
+           transform: scale(1.1);
+           transition: 0.5s;
+        }
+
+        .product-price-old{
+            text-decoration: line-through;
+        }
+
+        .product-buy{
+            border-radius: 2px;
+            border: 1px solid rgb(216, 102, 102);
+            margin: 15px 0;
+        }
+
+        .product-buy:hover{
+            background-color: rgb(207, 104, 104);
+        }
+
+
+    </style>
+
+    <div id="wrapper">
+        <div id="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 bg-secondary text-center text-light p-2">
+                        Unitop Academy
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content" class="m-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-mg-12">
+                        <h3>Shop</h3>
+                    </div>
+                </div>
+                <div id="list-product" class="mt-3">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="product-item border shadow p-4 mb-4">
+                                <div class="product-thumb mb-3">
+                                    <a href="" >
+                                        <img class="img-fluid" src="./img/ip-11-pro-xam.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-info text-center">
+                                    <a href="" class="product-name">Lorem ipsum dolor sit amet.</a>
+                                    <span class="product-price-current text-danger">17.000.000đ</span>
+                                    <span class="product-price-old text-secondary">20.000.000đ</span>
+                                    <a href="" class="product-buy d-inline-block text-danger text-decoration-none p-1">Đặt mua</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="product-item border shadow p-4 mb-4">
+                                <div class="product-thumb mb-3">
+                                    <a href="" >
+                                        <img class="img-fluid" src="./img/ip-xr-do.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-info text-center">
+                                    <a href="" class="product-name">Lorem ipsum dolor sit amet.</a>
+                                    <span class="product-price-current text-danger">17.000.000đ</span>
+                                    <span class="product-price-old text-secondary">20.000.000đ</span>
+                                    <a href="" class="product-buy d-inline-block text-danger text-decoration-none p-1">Đặt mua</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="product-item border shadow p-4 mb-4">
+                                <div class="product-thumb mb-3">
+                                    <a href="" >
+                                        <img class="img-fluid" src="./img/iphone-7-plus-den.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-info text-center">
+                                    <a href="" class="product-name">Lorem ipsum dolor sit amet.</a>
+                                    <span class="product-price-current text-danger">17.000.000đ</span>
+                                    <span class="product-price-old text-secondary">20.000.000đ</span>
+                                    <a href="" class="product-buy d-inline-block text-danger text-decoration-none p-1">Đặt mua</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="product-item border shadow p-4 mb-4">
+                                <div class="product-thumb mb-3">
+                                    <a href="" >
+                                        <img class="img-fluid" src="./img/iphone-x-final_1_1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-info text-center">
+                                    <a href="" class="product-name">Lorem ipsum dolor sit amet.</a>
+                                    <span class="product-price-current text-danger">17.000.000đ</span>
+                                    <span class="product-price-old text-secondary">20.000.000đ</span>
+                                    <a href="" class="product-buy d-inline-block text-danger text-decoration-none p-1">Đặt mua</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-3">
+                            <div class="product-item border shadow p-4 mb-4">
+                                <div class="product-thumb mb-3">
+                                    <a href="" >
+                                        <img class="img-fluid" src="./img/ip-11-pro-xam.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-info text-center">
+                                    <a href="" class="product-name">Lorem ipsum dolor sit amet.</a>
+                                    <span class="product-price-current text-danger">17.000.000đ</span>
+                                    <span class="product-price-old text-secondary">20.000.000đ</span>
+                                    <a href="" class="product-buy d-inline-block text-danger text-decoration-none p-1">Đặt mua</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="product-item border shadow p-4 mb-4">
+                                <div class="product-thumb mb-3">
+                                    <a href="" >
+                                        <img class="img-fluid" src="./img/ip-xr-do.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-info text-center">
+                                    <a href="" class="product-name">Lorem ipsum dolor sit amet.</a>
+                                    <span class="product-price-current text-danger">17.000.000đ</span>
+                                    <span class="product-price-old text-secondary">20.000.000đ</span>
+                                    <a href="" class="product-buy d-inline-block text-danger text-decoration-none p-1">Đặt mua</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="product-item border shadow p-4 mb-4">
+                                <div class="product-thumb mb-3">
+                                    <a href="" >
+                                        <img class="img-fluid" src="./img/iphone-7-plus-den.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-info text-center">
+                                    <a href="" class="product-name">Lorem ipsum dolor sit amet.</a>
+                                    <span class="product-price-current text-danger">17.000.000đ</span>
+                                    <span class="product-price-old text-secondary">20.000.000đ</span>
+                                    <a href="" class="product-buy d-inline-block text-danger text-decoration-none p-1">Đặt mua</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="product-item border shadow p-4 mb-4">
+                                <div class="product-thumb mb-3">
+                                    <a href="" >
+                                        <img class="img-fluid" src="./img/iphone-x-final_1_1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-info text-center">
+                                    <a href="" class="product-name">Lorem ipsum dolor sit amet.</a>
+                                    <span class="product-price-current text-danger">17.000.000đ</span>
+                                    <span class="product-price-old text-secondary">20.000.000đ</span>
+                                    <a href="" class="product-buy d-inline-block text-danger text-decoration-none p-1">Đặt mua</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 text-center bg-secondary text-light p-2">
+                        Unitop.vn - Học để dẫn đầu
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

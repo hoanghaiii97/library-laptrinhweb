@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương thức thay đổi kích thước</title>
+    <script src="./js/jquery.min.js"></script>
+    <style>
+        .box {
+            min-height: 100px;
+            width: 200px;
+            border: 1px solid #333;
+            margin: 20px 0;
+        }
+
+        #box-1 {
+            padding: 10px 20px;
+        }
+    </style>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            var height_box_1, inner_height_box_1, outer_height_box_1;
+            height_box_1 = $('#box-1').height();
+            inner_height_box_1 = $('#box-1').innerHeight();
+            outer_height_box_1 = $('#box-1').outerHeight();
+            console.log(height_box_1 + '-' + inner_height_box_1 + '-' + outer_height_box_1);
+
+            var width_box_1, inner_width_box_1, outer_width_box_1;
+            width_box_1 = $('#box-1').width();
+            inner_width_box_1 = $('#box-1').innerWidth();
+            outer_width_box_1 = $('#box-1').outerWidth();
+            console.log(width_box_1 + '-' + inner_width_box_1 + '-' + outer_width_box_1);
+
+            // Thiết lập độ cao các box bằng nhau
+            $('.box').height(height_box_1);
+        });
+    </script>
+
+    <h1>Phương thức xử lí kích thước trong jquery</h1>
+    <div class="box" id="box-1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente officiis saepe nesciunt veniam dolorem, minus
+        magni reiciendis consequatur ullam aspernatur distinctio fuga, harum modi laudantium necessitatibus dolores
+        soluta? Eum vitae voluptas accusamus ex odit optio reiciendis aliquam quod! Natus, temporibus. Vel autem labore
+        a consectetur adipisci officia quam! Itaque, molestiae.
+    </div>
+    <div class="box" id="box-2">Box 2</div>
+    <div class="box" id="box-3">Box 3</div>
+</body>
+
+</html>

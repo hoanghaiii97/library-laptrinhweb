@@ -1,0 +1,18 @@
+#woocommerce-product-data .type_box,
+#woocommerce-product-data ul.wc-tabs li,
+.sale_schedule{
+	/*display: none !important;*/
+}
+#woocommerce-product-data ul.wc-tabs li.general_options, #woocommerce-product-data ul.wc-tabs li.inventory_options {
+	display: block !important;
+}
+
+.rt-save {
+	float: right;
+}
+.cs-restore, .cs-framework .cs-expand-all {
+	display: none !important;
+}
+.shipping_options,.linked_product_options {
+	display: none !important;
+}

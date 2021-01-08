@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sự kiện hover trong Jquery</title>
+    <script src="./js/jquery.min.js"></script>
+    <style>
+        #target{
+            display: inline-block;
+            background-color:  gold;
+            color: #fff;
+            text-decoration: none;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            // $("a#target").hover(
+            //     // hoverIn
+            //     function(){
+            //         console.log('hoverIn');
+            //     },
+            //     // hoverOut
+            //     function(){
+            //         console.log('hoverOut');
+            //     }
+            // );
+
+            $("a#target").hover(function(){
+                console.log("Hover In Out");
+            });
+        });
+    </script>
+
+    <h1>Sự kiện hover trong Jquery</h1>
+    <a href="" id="target">TARGET</a>
+</body>
+</html>

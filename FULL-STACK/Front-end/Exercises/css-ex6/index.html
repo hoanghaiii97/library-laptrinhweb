@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-EX6:Flex CSS</title>
+</head>
+
+<body>
+    <style>
+        #wrapper {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        #header {
+            background-color: mediumturquoise;
+            text-align: center;
+            padding: 15px;
+            color: #fff;
+        }
+
+        #wp-content {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #content {
+            flex: 0 2 600px;
+            height: 500px;
+            padding: 15px;
+            background-color: rgb(226, 217, 217);
+            box-sizing: border-box;
+        }
+
+        #slidebar {
+            flex: 0 1 360px;
+            height: 500px;
+            padding: 15px;
+            background-color: rgb(158, 148, 148);
+            box-sizing: border-box;
+        }
+
+        #footer {
+            background-color: mediumturquoise;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+    <div id="wrapper">
+        <div id="header">
+            Layout web 3 cột - Flex CSS
+        </div>
+        <div id="wp-content">
+            <div id="content">
+                Content
+            </div>
+            <div id="slidebar">
+                Slidebar
+            </div>
+        </div>
+        <div id="footer">
+            Unitop.vn
+        </div>
+    </div>
+</body>
+
+</html>
